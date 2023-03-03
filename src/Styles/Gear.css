@@ -1,0 +1,44 @@
+.gear-container {
+    overflow: scroll;
+    position: relative;
+}
+
+.gear-container:hover {
+    cursor: pointer;
+}
+
+.gear-info-container {
+    position: absolute;
+    padding: 1rem;
+    background-image: linear-gradient(rgb(71, 71, 71), black);
+    transition: ease-in top .5s, ease-in opacity .5s;
+    top:-300px;
+    left:0;
+    font-size: .75rem;
+    opacity: 0;
+    z-index: 10;
+}
+
+.gear-name {
+    margin: .5rem 0;
+}
+
+.reveal {
+    top: 0px;
+    opacity: 1;
+}
+
+.gear-name {
+    font-size: .85rem;
+}
+.shortname-tag {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: .75rem;
+    z-index: 5;
+}
+
+.purchase-info>p {
+    margin: .5rem 0;
+}

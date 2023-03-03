@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-button-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-header>img {
+    width: 45px;
+    height: auto;
+}

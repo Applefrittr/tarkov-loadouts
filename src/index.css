@@ -1,14 +1,26 @@
-body {
+@font-face {
+  font-family: Bender;
+  src: url("./Assets/Bender.otf");
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Bender;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
+  background-color: black;
+  background-image: url("./Assets/silhouette.png");
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

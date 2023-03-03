@@ -1,0 +1,58 @@
+.home-container {
+    color: white;
+    width: 100vw;
+    height: 90vh;
+    background-color: black;
+    position: relative;
+    overflow: scroll;
+}
+
+.hideout-overlay {
+    width: max(2000px, 100vw);
+    height: 90vh;
+    background-image: url("../Assets/backgrounds/hideout.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hideout-buttons {
+    position: absolute;
+    font-family: Bender;
+    color: white;
+    background-color: transparent;
+    appearance: none;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    padding: 0.1rem 1rem;
+    background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
+    border-radius: 2px;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    box-shadow: 0 0 5px 1px #000
+}
+
+.hideout-buttons:hover {
+    box-shadow: 0 0 20px 5px rgb(251, 252, 189);
+}
+
+.hideout-buttons:active {
+    scale: 95%;
+}
+
+#scav-button {
+    left: 15%;
+    top: 50%;
+}
+
+#intel-button {
+    top: 45%;
+    left:48%
+}
+
+#med-button {
+    top:42%;
+    right:18%
+}
