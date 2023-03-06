@@ -3,6 +3,11 @@
   src: url("./Assets/Bender.otf");
 }
 
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -12,11 +17,37 @@ body {
   font-family: Bender;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  background-image: url("./Assets/silhouette.png");
+  background-color: transparent;
   background-position:50% 50%;
   background-repeat: no-repeat;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("./Assets//hideout-logo.png");
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  animation: spin 2s infinite;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: black;
 }
 
 code {

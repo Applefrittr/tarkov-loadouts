@@ -10,8 +10,7 @@ const Nav = () => {
                 <h1>Tarkov Loadouts</h1>
             </div>
             <div className="nav-button-container">
-               <Link to="/"><button>Home</button></Link> 
-               <Link to="/randomizer"><button>Randomizer</button></Link> 
+               <Link to="/"><button>Hideout</button></Link> 
             </div>
         </section>
     )

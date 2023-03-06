@@ -1,15 +1,18 @@
 import "../Styles/Home.css";
 import AnimatePage from "./AnimatePage";
 import { Link } from "react-router-dom"
+import { Dialog } from "../Assets/DialogObj.js"
 
 const Home = () => {
   return (
     <AnimatePage>
       <section className="home-container">
         <div className="hideout-overlay">
-            <p>This is the Home Page!</p>
-            <Link to="/randomizer"><button id="scav-button" className="hideout-buttons">Scav Box</button></Link>
-            <button id="med-button" className="hideout-buttons">Med Station</button>
+            <div id="welcome-container">
+              <p>{Dialog.Hideout}</p>
+            </div>
+            <Link to="/loudout"><button id="scav-button" className="hideout-buttons">Scav Box</button></Link>
+            <Link to="/meds"><button id="med-button" className="hideout-buttons">Med Station</button></Link>
             <button id="intel-button" className="hideout-buttons">Intel Desk</button>
         </div>
       </section>

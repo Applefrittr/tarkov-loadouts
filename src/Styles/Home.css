@@ -5,6 +5,7 @@
     background-color: black;
     position: relative;
     overflow: scroll;
+
 }
 
 .hideout-overlay {
@@ -16,6 +17,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    padding: 2rem;
 }
 
 .hideout-buttons {
@@ -55,4 +57,13 @@
 #med-button {
     top:42%;
     right:18%
+}
+
+#welcome-container {
+    background-color: rgba(0, 0, 0, .65);
+    padding: 2rem;
+    width: 500px;
+    border: 1px solid black;
+    outline: 1.25px solid rgb(100, 100, 100);
+    box-shadow: 0 0 5px 0 black;
 }

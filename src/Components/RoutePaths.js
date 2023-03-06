@@ -1,8 +1,9 @@
 import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./Home.js"
-import Randomizer from "./Randomizer.js";
+import Loadout from "./Loadout.js";
 import { useState, useEffect } from "react"
+import Meds from "./Meds.js";
 
 // RoutePaths component to render our Routes and ensure that exit animations execute when compnennts are unmounted.  Also holds our API fetch request and stores the results
 // in state.  This dataset will then be passed to child components
@@ -63,7 +64,8 @@ const RoutePaths = (props) => {
       <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
-          <Route path="/randomizer" element={<Randomizer itemData={allItems}/>} />
+          <Route path="/loudout" element={<Loadout itemData={allItems}/>} />
+          <Route path="/meds" element={<Meds itemData={allItems}/>} />
         </Routes>
       </AnimatePresence>
     );
