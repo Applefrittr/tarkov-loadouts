@@ -1,0 +1,37 @@
+#maps-container {
+    width: 100vw;
+    height: 90vh;
+    background-color: black;
+    color: white;
+    overflow: scroll;
+}
+
+.map-slot {
+    width: 200px;
+    height: 115px;
+    background-color: grey;
+    border: 2px black solid;
+    position: relative;
+}
+
+#map-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1000px;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.selected {
+    border: solid 2px gold
+}
+
+.disabled {
+    opacity: .5;
+}
+
+.map-icon {
+    width: 100%;
+    height: 100%;
+}
