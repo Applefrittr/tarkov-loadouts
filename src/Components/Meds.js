@@ -3,10 +3,11 @@ import Gear from "./Gear.js";
 import { dataFilter, getRandom } from "./Loadout";
 import "../Styles/Meds.css";
 import AnimatePage from "./AnimatePage.js";
-import { Dialog } from "../Assets/DialogObj";
+import { Dialog } from "../Assets/DataObjects";
 import { AnimatePresence, motion } from "framer-motion";
 import Therapist from "../Assets/therapist.jpg";
 
+// Component for the injectors randomizer
 const Meds = (props) => {
   const [slot1, setSlot1] = useState();
   const [slot2, setSlot2] = useState();
@@ -14,8 +15,10 @@ const Meds = (props) => {
   const [slot4, setSlot4] = useState();
   const [cocktail, setCocktail] = useState(false);
 
-  const injectors = dataFilter(props.itemData, "injectors");
+  const injectors = dataFilter(props.itemData, "injectors");  // filter out injectors out of the fetched data object, dataFilters() called from Loadout.js
 
+  // Fire when user clicks "GET INJECTORS" button in UI.  Makes a copy of injectors array and calls getRandom() from Loadout.js to pull random item object out
+  // of data array.  Then calls noDupInjectors() to splice out the random object selected to avoid duplicates on the subsequent getRandom() calls.
   const getRandomCocktail = () => {
     setCocktail(false);
     let copy = [...injectors];
@@ -52,6 +55,8 @@ const Meds = (props) => {
     }, 1000);
   };
 
+  // UI rendered in 2 two planes: dialog box on the left plane and item grid on the right plane.  Responsive design implemented in Meds.css to stack planes on smaller
+  // screens.
   return (
     <AnimatePage>
       <section id="meds-container">
@@ -70,7 +75,7 @@ const Meds = (props) => {
                 </div>
                 <div id="dialog-button">
                   <button onClick={getRandomCocktail} id="getGear-button">
-                    GET STIM COCKTAIL
+                    GET INJECTORS
                   </button>
                 </div>
               </div>
@@ -78,8 +83,9 @@ const Meds = (props) => {
           </div>
           <div className="overlay-container">
             <div id="cocktail-grid-container">
-              <header>
+              <header id="grid-header">
                 <h1>Injector Cocktail</h1>
+                <p id="grid-header-tip">click injectors for info</p>
               </header>
               <div id="cocktail-grid">
                 <div className="cocktail-slots">

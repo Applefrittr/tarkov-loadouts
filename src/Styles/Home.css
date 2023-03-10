@@ -38,6 +38,7 @@
 
 .hideout-buttons:hover {
     box-shadow: 0 0 20px 5px rgb(251, 252, 189);
+    cursor: pointer;
 }
 
 .hideout-buttons:active {
@@ -66,4 +67,14 @@
     border: 1px solid black;
     outline: 1.25px solid rgb(100, 100, 100);
     box-shadow: 0 0 5px 0 black;
+    position: fixed;
+    left: 16px;
+}
+
+@media screen and (max-width: 500px) {
+    #welcome-container {
+        width: 90vw;
+    }
+
+
 }

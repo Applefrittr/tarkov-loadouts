@@ -13,6 +13,8 @@ const RoutePaths = (props) => {
     const [allItems, setAllItems] = useState([])
     const [allMaps, setAllMaps] = useState([])
 
+    // fetch request to api.tarkov.dev.  This fetch request in effect pulls the ENITRE item dataset from Escape from Tarkov as well as the maps.  The items dataset then
+    // gets filtered by child components to be rendered and displayed out to the user in the UI
     useEffect(() => {
         const getAllItems = async () => {
           const allItems = await fetch('https://api.tarkov.dev/graphql', {
@@ -73,7 +75,7 @@ const RoutePaths = (props) => {
       <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
-          <Route path="/loudout" element={<Loadout itemData={allItems}/>} />
+          <Route path="/loadout" element={<Loadout itemData={allItems}/>} />
           <Route path="/meds" element={<Meds itemData={allItems}/>} />
           <Route path="/maps" element={<Maps mapData={allMaps}/>} />
         </Routes>

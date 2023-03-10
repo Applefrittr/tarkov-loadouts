@@ -135,6 +135,11 @@ header>h1 {
     height: auto;
 }
 
+#grid-header-tip {
+    padding: .25rem;
+    background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
+}
+
 footer {
     height: 50px;
 }
@@ -163,6 +168,7 @@ footer {
 
 #getGear-button:hover {
     background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
+    cursor: pointer;
 }
 
 #getGear-button:active {
@@ -216,6 +222,7 @@ footer {
 @media screen and (max-width: 500px) {
     #equipment-grid {
         grid-template-columns:  250px;
+        justify-content: center;
     }
     #armor-slot {
         grid-row: 3/4;

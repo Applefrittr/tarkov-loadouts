@@ -1,21 +1,24 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../Styles/Randomizer.css";
 import Gear from "./Gear.js";
-import ScavIcon from "../Assets/scav.png";
-import { Dialog } from "../Assets/DialogObj";
+import { Dialog } from "../Assets/DataObjects";
 import Fence from "../Assets/Fence.jpg";
 import { AnimatePresence, motion } from "framer-motion";
 import AnimatePage from "./AnimatePage";
 
+// Loadout componentrandomizer renders out a random set of gear when the user clicks "GET LOADOUT" in the UI.  Gear images and data is pulled from the fetched dataset 
+// in RoutePaths.js
 function Loadout(props) {
+  // each gear slot has a state, which holds a specific item data object
   const [currArmor, setCurrArmor] = useState();
   const [currWeapon, setCurrWeapon] = useState();
   const [currHelmet, setCurrHelmet] = useState();
   const [currTacRig, setCurrTacRig] = useState();
   const [currBackPack, setCurrBackPack] = useState();
   const [currHeadPhones, setCurrHeadPhones] = useState();
-  const [currGear, setCurrGear] = useState(false);
+  const [currGear, setCurrGear] = useState(false); // This state is used in the render and re-render when the user clicks "GET LOADOUT"
 
+  // filter out specific item categories from the fetched dataset
   const armors = dataFilter(props.itemData, "armor");
   const weapons = dataFilter(props.itemData, "gun");
   const helmets = dataFilter(props.itemData, "helmet");
@@ -23,6 +26,8 @@ function Loadout(props) {
   const backPacks = dataFilter(props.itemData, "backpack");
   const headPhones = dataFilter(props.itemData, "headphones");
 
+  // Each random____() gets a random gear object out of a respective filtered dataset.  Some of the random___() fuctions have a conditional statement to address 
+  // gear compatibility restrictions in-game
   const randomArmor = () => {
     const armor = getRandom(armors);
     setCurrArmor({
@@ -42,13 +47,23 @@ function Loadout(props) {
     }
   };
 
+  // randomWeapon() has a try-catch block to deal with API schema differences in the weapons category
   const randomWeapon = () => {
     const weapon = getRandom(weapons);
-    setCurrWeapon({
-      img: weapon.properties.defaultPreset.inspectImageLink,
-      item: weapon,
-      vendor: weapon.buyFor,
-    });
+    try {
+      setCurrWeapon({
+        img: weapon.properties.defaultPreset.inspectImageLink,
+        item: weapon,
+        vendor: weapon.buyFor,
+      });
+    } catch {
+      setCurrWeapon({
+        img: weapon.inspectImageLink,
+        item: weapon,
+        vendor: weapon.buyFor,
+      });
+    }
+    
   };
 
   const randomHelmet = () => {
@@ -79,6 +94,7 @@ function Loadout(props) {
     });
   };
 
+  // randomLoadOut is the onClick function which calls all random___() functions to generate and display a randomized gearset in the UI
   const randomLoadOut = (e) => {
     e.target.disabled = true;
     setCurrGear(false);
@@ -92,6 +108,8 @@ function Loadout(props) {
     }, 1000);
   };
 
+  // UI rendered in 2 two planes: dialog box on the left plane and item grid on the right plane.  Responsive design implemented in Loadout.css to stack planes on smaller
+  // screens and change the layout of the items grid to ensure everything fits onscreen without needing to scroll horizontally
   return (
     <AnimatePage>
       <section id="randomizer-container">
@@ -119,8 +137,8 @@ function Loadout(props) {
           <div className="overlay-container">
             <div id="grid-container">
               <header id="grid-header">
-                <img src={ScavIcon}></img>
                 <h1>Equipment</h1>
+                <p id="grid-header-tip">click gear for info</p>
               </header>
               <div id="equipment-grid">
                 <div id="armor-slot" className="slot">
@@ -249,6 +267,8 @@ function Loadout(props) {
 
 export default Loadout;
 
+// filter helper function which takes a data set of objects and a key (string) to filter out and return a new data set of objects (array) that contains the key.  Optional 3rd paramenter exclude
+// will filter objects out of the data set that do not include the exclude paramenter
 export function dataFilter(data, key, exclude) {
   let result = data.filter((item) => item.types.includes(key));
   if (exclude) {
@@ -257,8 +277,8 @@ export function dataFilter(data, key, exclude) {
   return result;
 }
 
+// simple randomizer that returns a random object out of a dataset
 export function getRandom(dataSet) {
   const random = Math.floor(Math.random() * dataSet.length);
-  console.log(dataSet[random]);
   return dataSet[random];
 }

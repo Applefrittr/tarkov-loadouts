@@ -7,7 +7,7 @@
     overflow: scroll;
     background-image: url("../Assets/backgrounds/medstation.png");
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
 
 #cocktail-grid {
