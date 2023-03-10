@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tarkov-loadouts/static/css/main.aff96bd9.css",
+    "main.css": "/tarkov-loadouts/static/css/main.568d0815.css",
     "main.js": "/tarkov-loadouts/static/js/main.bf7f57d9.js",
     "static/media/hideout.png": "/tarkov-loadouts/static/media/hideout.89879901440b34926e4a.png",
     "static/media/inteldesk.png": "/tarkov-loadouts/static/media/inteldesk.b1a8cf6e79f848d91cae.png",
@@ -22,11 +22,11 @@
     "static/media/customs.jpg": "/tarkov-loadouts/static/media/customs.1e170a8c072263e6faab.jpg",
     "static/media/therapist.jpg": "/tarkov-loadouts/static/media/therapist.c35e051be76eac762c17.jpg",
     "index.html": "/tarkov-loadouts/index.html",
-    "main.aff96bd9.css.map": "/tarkov-loadouts/static/css/main.aff96bd9.css.map",
+    "main.568d0815.css.map": "/tarkov-loadouts/static/css/main.568d0815.css.map",
     "main.bf7f57d9.js.map": "/tarkov-loadouts/static/js/main.bf7f57d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.aff96bd9.css",
+    "static/css/main.568d0815.css",
     "static/js/main.bf7f57d9.js"
   ]
 }
