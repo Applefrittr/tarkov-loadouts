@@ -22,7 +22,7 @@ const Nav = () => {
         <h1>Tarkov Loadouts</h1>
       </div>
       <div className="nav-button-container">
-        <Link to="/">
+        <Link to="/" tabIndex="-1">
           <button className="nav-buttons">Hideout</button>
         </Link>
         <button className="nav-buttons" onClick={displayAbout}>

@@ -12,6 +12,7 @@
 
 .nav-button-container {
     display: flex;
+    gap: .1rem;
 }
 
 .nav-header {
@@ -34,6 +35,10 @@
     border: none;
     outline: none;
     color:white;
+}
+
+.nav-buttons:focus {
+    outline: 1px solid dodgerblue;
 }
 
 .nav-buttons:hover {
