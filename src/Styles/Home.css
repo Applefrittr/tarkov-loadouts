@@ -18,6 +18,9 @@
     left: 0;
     top: 0;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .hideout-buttons {
@@ -80,5 +83,18 @@
         width: 90vw;
     }
 
+    #welcome-container {
+        position: static;
+        margin-bottom: 5rem;
+    }
 
+    .hideout-buttons {
+        position:static;
+    }
+
+    .hideout-overlay {
+        width: 100vw;
+        background-position: center;
+        align-items: center;
+    }
 }

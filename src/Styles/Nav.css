@@ -96,3 +96,9 @@
     text-align: center;
     font-size: .75rem;
 }
+
+@media screen and (max-width: 500px) {
+    .nav-buttons {
+        padding: .5rem 1rem
+    }
+}
