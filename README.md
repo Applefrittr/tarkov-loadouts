@@ -1,3 +1,11 @@
+# Tarkov Loadouts
+
+Companion App to Battle State Game's Escape from Tarkov.  Personal project designed with randomization in mind, players can use this app to generate unique loadouts.  Also includes a random map selector and med injector combos.
+
+Thanks to the folks at [Tarkov.dev](https://tarkov.dev/api/) for their API.
+
+React documentation below.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
