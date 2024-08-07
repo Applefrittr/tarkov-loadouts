@@ -29,6 +29,7 @@ const Maps = (props) => {
         break;
       }
     }
+    if (index === undefined) return;
     const currMap = AllMaps[index];
     mapArray.push(
       <div
