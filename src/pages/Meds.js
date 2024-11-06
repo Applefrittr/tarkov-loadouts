@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Gear from "./Gear.js";
+import Gear from "../Components/Gear";
 import { dataFilter, getRandom } from "./Loadout";
 import "../Styles/Meds.css";
-import AnimatePage from "./AnimatePage.js";
+import AnimatePage from "../Components/AnimatePage";
 import { Dialog } from "../Assets/DataObjects";
 import { AnimatePresence, motion } from "framer-motion";
 import Therapist from "../Assets/therapist.jpg";
@@ -15,7 +15,7 @@ const Meds = (props) => {
   const [slot4, setSlot4] = useState();
   const [cocktail, setCocktail] = useState(false);
 
-  const injectors = dataFilter(props.itemData, "injectors");  // filter out injectors out of the fetched data object, dataFilters() called from Loadout.js
+  const injectors = dataFilter(props.itemData, "injectors"); // filter out injectors out of the fetched data object, dataFilters() called from Loadout.js
 
   // Fire when user clicks "GET INJECTORS" button in UI.  Makes a copy of injectors array and calls getRandom() from Loadout.js to pull random item object out
   // of data array.  Then calls noDupInjectors() to splice out the random object selected to avoid duplicates on the subsequent getRandom() calls.

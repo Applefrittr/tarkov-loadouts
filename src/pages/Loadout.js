@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "../Styles/Randomizer.css";
-import Gear from "./Gear.js";
+import Gear from "../Components/Gear";
 import { Dialog } from "../Assets/DataObjects";
 import Fence from "../Assets/Fence.jpg";
 import { AnimatePresence, motion } from "framer-motion";
-import AnimatePage from "./AnimatePage";
+import AnimatePage from "../Components/AnimatePage";
 
-// Loadout componentrandomizer renders out a random set of gear when the user clicks "GET LOADOUT" in the UI.  Gear images and data is pulled from the fetched dataset 
+// Loadout componentrandomizer renders out a random set of gear when the user clicks "GET LOADOUT" in the UI.  Gear images and data is pulled from the fetched dataset
 // in RoutePaths.js
 function Loadout(props) {
   // each gear slot has a state, which holds a specific item data object
@@ -26,7 +26,7 @@ function Loadout(props) {
   const backPacks = dataFilter(props.itemData, "backpack");
   const headPhones = dataFilter(props.itemData, "headphones");
 
-  // Each random____() gets a random gear object out of a respective filtered dataset.  Some of the random___() fuctions have a conditional statement to address 
+  // Each random____() gets a random gear object out of a respective filtered dataset.  Some of the random___() fuctions have a conditional statement to address
   // gear compatibility restrictions in-game
   const randomArmor = () => {
     const armor = getRandom(armors);
@@ -63,7 +63,6 @@ function Loadout(props) {
         vendor: weapon.buyFor,
       });
     }
-    
   };
 
   const randomHelmet = () => {

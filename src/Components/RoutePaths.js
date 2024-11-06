@@ -1,10 +1,10 @@
 import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Home from "./Home.js";
-import Loadout from "./Loadout.js";
+import Home from "../pages/Home.js";
+import Loadout from "../pages/Loadout.js";
 import { useState, useEffect } from "react";
-import Meds from "./Meds.js";
-import Maps from "./Maps.js";
+import Meds from "../pages/Meds.js";
+import Maps from "../pages/Maps.js";
 
 // RoutePaths component to render our Routes and ensure that exit animations execute when compnennts are unmounted.  Also holds our API fetch request and stores the results
 // in state.  This dataset will then be passed to child components

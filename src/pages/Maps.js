@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import "../Styles/Maps.css";
 import { AllMaps } from "../Assets/DataObjects";
-import AnimatePage from "./AnimatePage";
+import AnimatePage from "../Components/AnimatePage";
 import { Dialog } from "../Assets/DataObjects";
 import Skier from "../Assets/skier.jpg";
 import { AnimatePresence, motion } from "framer-motion";
