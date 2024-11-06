@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tarkov-loadouts/static/css/main.ece0c764.css",
-    "main.js": "/tarkov-loadouts/static/js/main.ac96579d.js",
+    "main.js": "/tarkov-loadouts/static/js/main.5f1cc1a5.js",
     "static/media/hideout.png": "/tarkov-loadouts/static/media/hideout.89879901440b34926e4a.png",
     "static/media/inteldesk.png": "/tarkov-loadouts/static/media/inteldesk.b1a8cf6e79f848d91cae.png",
     "static/media/ScavBox.png": "/tarkov-loadouts/static/media/ScavBox.bb746ecea73de842c762.png",
@@ -9,7 +9,6 @@
     "static/media/groundzero.jpg": "/tarkov-loadouts/static/media/groundzero.0ce435a2fa86744466bb.jpg",
     "static/media/Bender.otf": "/tarkov-loadouts/static/media/Bender.554dbf85e7b088fa9434.otf",
     "static/media/woods.jpg": "/tarkov-loadouts/static/media/woods.5c2b3e1ad8789c0ffffa.jpg",
-    "static/media/silhouette.png": "/tarkov-loadouts/static/media/silhouette.08ca0edcf0727ed9bdaf.png",
     "static/media/streets.jpg": "/tarkov-loadouts/static/media/streets.76450a3aa720d2d0bd39.jpg",
     "static/media/labs.jpg": "/tarkov-loadouts/static/media/labs.d7acaf458434fa048c90.jpg",
     "static/media/factory1.jpg": "/tarkov-loadouts/static/media/factory1.f92d22323a1f90d39d7c.jpg",
@@ -22,12 +21,13 @@
     "static/media/factory.jpg": "/tarkov-loadouts/static/media/factory.9e59c91e411c78e3710e.jpg",
     "static/media/customs.jpg": "/tarkov-loadouts/static/media/customs.1e170a8c072263e6faab.jpg",
     "static/media/therapist.jpg": "/tarkov-loadouts/static/media/therapist.c35e051be76eac762c17.jpg",
+    "static/media/silhouette.png": "/tarkov-loadouts/static/media/silhouette.2e3848d962aaa5176732.png",
     "index.html": "/tarkov-loadouts/index.html",
     "main.ece0c764.css.map": "/tarkov-loadouts/static/css/main.ece0c764.css.map",
-    "main.ac96579d.js.map": "/tarkov-loadouts/static/js/main.ac96579d.js.map"
+    "main.5f1cc1a5.js.map": "/tarkov-loadouts/static/js/main.5f1cc1a5.js.map"
   },
   "entrypoints": [
     "static/css/main.ece0c764.css",
-    "static/js/main.ac96579d.js"
+    "static/js/main.5f1cc1a5.js"
   ]
 }
