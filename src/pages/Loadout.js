@@ -121,7 +121,7 @@ function Loadout(props) {
               <div id="dialog">
                 <div id="dialog-img-text">
                   <div id="vendor-icon">
-                    <img src={Fence}></img>
+                    <img src={Fence} alt="Fence"></img>
                   </div>
                   <p>{Dialog.Fence}</p>
                 </div>

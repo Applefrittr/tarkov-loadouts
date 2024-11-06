@@ -69,7 +69,7 @@ const Meds = (props) => {
               <div id="dialog">
                 <div id="dialog-img-text">
                   <div id="vendor-icon">
-                    <img src={Therapist}></img>
+                    <img src={Therapist} alt="Therapist"></img>
                   </div>
                   <p>{Dialog.Therapist}</p>
                 </div>

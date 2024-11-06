@@ -102,7 +102,7 @@ const Maps = (props) => {
               <div id="dialog">
                 <div id="dialog-img-text">
                   <div id="vendor-icon">
-                    <img src={Skier}></img>
+                    <img src={Skier} alt="Skier"></img>
                   </div>
                   <p>{Dialog.Skier}</p>
                 </div>
