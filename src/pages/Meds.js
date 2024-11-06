@@ -8,14 +8,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import Therapist from "../Assets/therapist.jpg";
 
 // Component for the injectors randomizer
-const Meds = (props) => {
+const Meds = ({ itemData }) => {
   const [slot1, setSlot1] = useState();
   const [slot2, setSlot2] = useState();
   const [slot3, setSlot3] = useState();
   const [slot4, setSlot4] = useState();
   const [cocktail, setCocktail] = useState(false);
 
-  const injectors = dataFilter(props.itemData, "injectors"); // filter out injectors out of the fetched data object, dataFilters() called from Loadout.js
+  const injectors = dataFilter(itemData, "injectors"); // filter out injectors out of the fetched data object, dataFilters() called from Loadout.js
 
   // Fire when user clicks "GET INJECTORS" button in UI.  Makes a copy of injectors array and calls getRandom() from Loadout.js to pull random item object out
   // of data array.  Then calls noDupInjectors() to splice out the random object selected to avoid duplicates on the subsequent getRandom() calls.

@@ -8,7 +8,7 @@ import AnimatePage from "../Components/AnimatePage";
 
 // Loadout componentrandomizer renders out a random set of gear when the user clicks "GET LOADOUT" in the UI.  Gear images and data is pulled from the fetched dataset
 // in RoutePaths.js
-function Loadout(props) {
+function Loadout({ itemData }) {
   // each gear slot has a state, which holds a specific item data object
   const [currArmor, setCurrArmor] = useState();
   const [currWeapon, setCurrWeapon] = useState();
@@ -19,12 +19,12 @@ function Loadout(props) {
   const [currGear, setCurrGear] = useState(false); // This state is used in the render and re-render when the user clicks "GET LOADOUT"
 
   // filter out specific item categories from the fetched dataset
-  const armors = dataFilter(props.itemData, "armor");
-  const weapons = dataFilter(props.itemData, "gun");
-  const helmets = dataFilter(props.itemData, "helmet");
-  const tacRigs = dataFilter(props.itemData, "rig", "armor");
-  const backPacks = dataFilter(props.itemData, "backpack");
-  const headPhones = dataFilter(props.itemData, "headphones");
+  const armors = dataFilter(itemData, "armor");
+  const weapons = dataFilter(itemData, "gun");
+  const helmets = dataFilter(itemData, "helmet");
+  const tacRigs = dataFilter(itemData, "rig", "armor");
+  const backPacks = dataFilter(itemData, "backpack");
+  const headPhones = dataFilter(itemData, "headphones");
 
   // Each random____() gets a random gear object out of a respective filtered dataset.  Some of the random___() fuctions have a conditional statement to address
   // gear compatibility restrictions in-game

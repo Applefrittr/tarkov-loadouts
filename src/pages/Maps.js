@@ -7,7 +7,7 @@ import Skier from "../Assets/skier.jpg";
 import { AnimatePresence, motion } from "framer-motion";
 
 // Maps component renders out a grid with images of the maps in Escape from Tarkov.  Once the user clicks the button in the UI, a map is picked at random from the grid
-const Maps = (props) => {
+const Maps = ({ mapData }) => {
   const mapArray = [];
   const ref = useRef([]); // ref is an array of useRef pointers, used to identify each unique map image
   const [displayErr, setDisplayErr] = useState(false);
@@ -21,7 +21,7 @@ const Maps = (props) => {
   // iterates through each map object retrieved from the dataset retrieved from the api fetch call in RoutePaths.js and compares it to an object in DialogObects.js to
   // retrieve map thumbnails (no map image references in the api, so this image files were downloaded into the app).  Creates markup for each map image and pushes
   // it into the mapArray variable to be rendered
-  props.mapData.forEach((map, i) => {
+  mapData.forEach((map, i) => {
     let index;
     for (let a = 0; a < AllMaps.length; a++) {
       if (AllMaps[a].name === map.name) {
