@@ -15,6 +15,9 @@ export async function getTarkovData() {
                 types
                 description
                 blocksHeadphones
+                conflictingItems {
+                  name
+                }
                 inspectImageLink
                 buyFor {
                   price
