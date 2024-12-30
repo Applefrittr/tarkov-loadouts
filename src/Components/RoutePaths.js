@@ -11,8 +11,8 @@ import { getTarkovData } from "../api/tarkov-dev";
 // in state.  This dataset will then be passed to child components
 const RoutePaths = (props) => {
   const location = useLocation();
-  const [allItems, setAllItems] = useState([]);
-  const [allMaps, setAllMaps] = useState([]);
+  const [allItems, setAllItems] = useState(null);
+  const [allMaps, setAllMaps] = useState(null);
 
   useEffect(() => {
     const getData = async () => {
@@ -20,17 +20,20 @@ const RoutePaths = (props) => {
       setAllItems(items);
       setAllMaps(maps);
     };
+
     getData();
   }, []);
 
   return (
     <AnimatePresence mode="wait">
-      <Routes key={location.pathname} location={location}>
-        <Route path="/" element={<Home />} />
-        <Route path="/loadout" element={<Loadout itemData={allItems} />} />
-        <Route path="/meds" element={<Meds itemData={allItems} />} />
-        <Route path="/maps" element={<Maps mapData={allMaps} />} />
-      </Routes>
+      {allItems && (
+        <Routes key={location.pathname} location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/loadout" element={<Loadout itemData={allItems} />} />
+          <Route path="/meds" element={<Meds itemData={allItems} />} />
+          <Route path="/maps" element={<Maps mapData={allMaps} />} />
+        </Routes>
+      )}
     </AnimatePresence>
   );
 };
