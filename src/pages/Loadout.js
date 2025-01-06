@@ -73,7 +73,18 @@ function Loadout({ itemData }) {
       vendor: helmet.buyFor,
     });
     if (!helmet.blocksHeadphones) {
-      const headphone = getRandom(headPhones);
+      let headphone = getRandom(headPhones);
+
+      // This filters out RAC style headphones.  As it stands, RAC style headphones can be rolled with any helmet that can use headphones - which is not possible in game
+      while (
+        headphone.conflictingItems
+          .map((item) => item.name)
+          .indexOf(helmet.name) > -1 ||
+        headphone.blocksHeadphones
+      ) {
+        headphone = getRandom(headPhones);
+      }
+
       setCurrHeadPhones({
         img: headphone.inspectImageLink,
         item: headphone,
