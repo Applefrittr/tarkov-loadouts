@@ -6,6 +6,11 @@
   background-position: bottom;
   color: white;
   overflow: scroll;
+  scrollbar-width: none;
+}
+
+#randomizer-container::-webkit-scrollbar {
+  display: none;
 }
 
 .overlay {
