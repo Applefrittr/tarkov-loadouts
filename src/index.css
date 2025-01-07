@@ -30,10 +30,15 @@ body {
   background-color: black;
 }
 
+#root {
+  height: inherit;
+}
+
 #app-container {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: inherit;
 }
 
 #hideout-logo {
