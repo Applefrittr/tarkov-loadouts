@@ -50,6 +50,8 @@ body {
 }
 
 #hideout-logo > img {
+  width: 100%;
+  height: auto;
   animation: spin 2s infinite;
 }
 
@@ -60,4 +62,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media screen and (max-width: 500px) {
+  #hideout-logo {
+    width: 150px;
+    height: 150px;
+  }
 }
