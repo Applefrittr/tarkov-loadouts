@@ -1,100 +1,100 @@
 .home-container {
-    color: white;
-    width: 100vw;
-    height: 90vh;
-    background-color: black;
-    position: relative;
-    overflow: scroll;
-
+  color: white;
+  width: 100vw;
+  height: 90vh;
+  background-color: black;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .hideout-overlay {
-    width: max(2000px, 100vw);
-    height: 90vh;
-    background-image: url("../Assets/backgrounds/hideout.png");
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  width: max(2000px, 100vw);
+  height: 90vh;
+  background-image: url("../Assets/backgrounds/hideout.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .hideout-buttons {
-    position: absolute;
-    font-family: Bender;
-    color: white;
-    background-color: transparent;
-    appearance: none;
-    font-size: 1.5rem;
-    border: none;
-    outline: none;
-    padding: 0.1rem 1rem;
-    background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
-    border-radius: 2px;
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-    box-shadow: 0 0 5px 1px #000
+  position: absolute;
+  font-family: Bender;
+  color: white;
+  background-color: transparent;
+  appearance: none;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 0.1rem 1rem;
+  background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
+  border-radius: 2px;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+  box-shadow: 0 0 5px 1px #000;
 }
 
 .hideout-buttons:hover {
-    box-shadow: 0 0 20px 5px rgb(251, 252, 189);
-    cursor: pointer;
+  box-shadow: 0 0 20px 5px rgb(251, 252, 189);
+  cursor: pointer;
 }
 
 .hideout-buttons:active {
-    scale: 95%;
+  scale: 95%;
 }
 
 .hideout-buttons:focus {
-    outline: 2px solid dodgerblue;
+  outline: 2px solid dodgerblue;
 }
 
 #scav-button {
-    left: 15%;
-    top: 50%;
+  left: 15%;
+  top: 50%;
 }
 
 #intel-button {
-    top: 45%;
-    left:48%
+  top: 45%;
+  left: 48%;
 }
 
 #med-button {
-    top:42%;
-    right:18%
+  top: 42%;
+  right: 18%;
 }
 
 #welcome-container {
-    background-color: rgba(0, 0, 0, .65);
-    padding: 2rem;
-    width: 500px;
-    border: 1px solid black;
-    outline: 1.25px solid rgb(100, 100, 100);
-    box-shadow: 0 0 5px 0 black;
-    position: fixed;
-    left: 16px;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  width: 500px;
+  border: 1px solid black;
+  outline: 1.25px solid rgb(100, 100, 100);
+  box-shadow: 0 0 5px 0 black;
+  position: fixed;
+  left: 16px;
 }
 
 @media screen and (max-width: 500px) {
-    #welcome-container {
-        width: 90vw;
-    }
+  #welcome-container {
+    width: 90vw;
+  }
 
-    #welcome-container {
-        position: static;
-        margin-bottom: 5rem;
-    }
+  #welcome-container {
+    position: static;
+    margin-bottom: 5rem;
+  }
 
-    .hideout-buttons {
-        position:static;
-    }
+  .hideout-buttons {
+    position: static;
+  }
 
-    .hideout-overlay {
-        width: 100vw;
-        background-position: center;
-        align-items: center;
-    }
+  .hideout-overlay {
+    width: 100vw;
+    background-position: center;
+    align-items: center;
+  }
 }

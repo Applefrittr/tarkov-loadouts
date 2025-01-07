@@ -1,263 +1,267 @@
 #randomizer-container {
-    width: 100vw;
-    height: 90vh;
-    background-image: url("../Assets/backgrounds/ScavBox.png");
-    background-size: cover;
-    background-position: bottom;
-    color: white;
-    overflow: scroll;
+  width: 100vw;
+  height: 90vh;
+  background-image: url("../Assets/backgrounds/ScavBox.png");
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#randomizer-container::-webkit-scrollbar {
+  display: none;
 }
 
 .overlay {
-    width: inherit;
-    min-height: inherit;
-    display: flex;
+  width: inherit;
+  min-height: inherit;
+  display: flex;
 }
 
 .overlay-container {
-    flex: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 #equipment-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: repeat(3, 180px);
-    gap: 2rem;
-    max-width: 850px;
-    background-color: rgba(0, 0, 0, .65);
-    padding: 2rem;
-
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 180px);
+  gap: 1rem;
+  max-width: 850px;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
 }
 
 .slot {
-    width: 100%;
-    height: 180px;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  position: relative;
 }
 
 #armor-slot {
-    grid-column: 2/3;
-    grid-row: 2/3;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 #helmet-slot {
-    grid-column: 2/3;
-    grid-row: 1/2;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 #headphones-slot {
-    grid-column: 1/2;
-    grid-row: 1/2;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 #weapon-slot {
-    grid-column: 1/3;
-    grid-row: 3/4;
+  grid-column: 1/3;
+  grid-row: 3/4;
 }
 
 #rig-slot {
-    grid-column: 3/4;
-    grid-row: 2/3;
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 #backpack-slot {
-    grid-column: 3/4;
-    grid-row: 3/4;
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 img {
-    max-width: 250px;
-    height: auto;
+  max-width: 250px;
+  height: auto;
 }
 
 .gear-label {
-    position: absolute;
-    background-image: linear-gradient(rgb(71, 71, 71), black);
-    top: -16px;
-    left: 0;
-    font-size: 14px;
-    color: white;
-    width: 100%;
-    padding-left: 5px;
-    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 95% 0);
+  position: absolute;
+  background-image: linear-gradient(rgb(71, 71, 71), black);
+  top: -16px;
+  left: 0;
+  font-size: 14px;
+  color: white;
+  width: 100%;
+  padding-left: 5px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 95% 0);
 }
 
 header,
 footer {
-    padding: .5rem 2rem;
-    background-color: rgba(50, 50, 50, .65);
+  padding: 0.5rem 2rem;
+  background-color: rgba(50, 50, 50, 0.65);
 }
 
-header>h1 {
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    font-size: 2rem;
+header > h1 {
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  font-size: 2rem;
 }
 
 #grid-container,
 .dialog-container {
-    border: 1px solid black;
-    outline: 1.25px solid rgb(100, 100, 100);
-    box-shadow: 0 0 5px 0 black;
+  border: 1px solid black;
+  outline: 1.25px solid rgb(100, 100, 100);
+  box-shadow: 0 0 5px 0 black;
 }
 
 #dialog {
-    background-color: rgba(0, 0, 0, .65);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #dialog-img-text {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
-#dialog-img-text>p {
-    min-width: 200px;
+#dialog-img-text > p {
+  min-width: 200px;
 }
 
 #grid-header {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-#grid-header>img {
-    width: 85px;
-    height: auto;
+#grid-header > img {
+  width: 85px;
+  height: auto;
 }
 
 #grid-header-tip {
-    padding: .25rem;
-    background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
+  padding: 0.25rem;
+  background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
 }
 
 footer {
-    height: 50px;
+  height: 50px;
 }
 
 #vendor-icon {
-    width: 250px;
-    height: auto;
-    flex-shrink: 0;
+  width: 250px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 #dialog-button {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #getGear-button {
-    font-size: 1.75rem;
-    font-family: Bender;
-    background-color: transparent;
-    color: white;
-    outline: none;
-    border: none;
-    appearance: none;
-    padding: 5px 30px;
+  font-size: 1.75rem;
+  font-family: Bender;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  appearance: none;
+  padding: 5px 30px;
 }
 
 #getGear-button:hover {
-    background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
-    cursor: pointer;
+  background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
+  cursor: pointer;
 }
 
 #getGear-button:active {
-    background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
-    scale: 95%;
+  background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
+  scale: 95%;
 }
 
 #getGear-button:focus {
-    outline: 1px solid dodgerblue;
+  outline: 1px solid dodgerblue;
 }
 
 @media screen and (max-width: 1500px) {
-    .overlay {
-        flex-direction: column;
-    }
-    
+  .overlay {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 920px) {
-    #equipment-grid {
-        grid-template-columns: repeat(2, 250px);
-    }
-    #armor-slot {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    
-    #helmet-slot {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    
-    #headphones-slot {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    
-    #weapon-slot {
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-    
-    #rig-slot {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    
-    #backpack-slot {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
+  #equipment-grid {
+    grid-template-columns: repeat(2, 250px);
+  }
+  #armor-slot {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #helmet-slot {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #headphones-slot {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #weapon-slot {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  #rig-slot {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  #backpack-slot {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    #equipment-grid {
-        grid-template-columns:  250px;
-        justify-content: center;
-    }
-    #armor-slot {
-        grid-row: 3/4;
-        grid-column: 1/2;
-    }
-    
-    #helmet-slot {
-        grid-row: 2/3;
-        grid-column: 1/2;
-    }
-    
-    #headphones-slot {
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
-    
-    #weapon-slot {
-        grid-row: 5/6;
-        grid-column: 1/2;
-    }
-    
-    #rig-slot {
-        grid-row: 4/5;
-        grid-column: 1/2;
-    }
-    
-    #backpack-slot {
-        grid-row: 6/7;
-        grid-column: 1/2;
-    }
+  #equipment-grid {
+    grid-template-columns: 250px;
+    justify-content: center;
+  }
+  #armor-slot {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
 
-    #dialog-img-text {
-        flex-direction: column;
-    }
+  #helmet-slot {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  #headphones-slot {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  #weapon-slot {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+
+  #rig-slot {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+
+  #backpack-slot {
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+
+  #dialog-img-text {
+    flex-direction: column;
+  }
 }

@@ -4,9 +4,14 @@
   background-color: black;
   color: white;
   overflow: scroll;
+  scrollbar-width: none;
   background-image: url("../Assets/backgrounds/inteldesk.png");
   background-size: cover;
   background-position: center;
+}
+
+#maps-container::-webkit-scrollbar {
+  display: none;
 }
 
 .map-slot {
@@ -30,7 +35,6 @@
 }
 
 #map-grid-container {
-  width: 1000px;
   border: 1px solid black;
   outline: 1.25px solid rgb(100, 100, 100);
   box-shadow: 0 0 5px 0 black;
@@ -42,7 +46,7 @@
   top: 11px;
   right: 10px;
   background-image: -moz-linear-gradient(rgb(255, 92, 92), rgb(255, 36, 36));
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .selected {

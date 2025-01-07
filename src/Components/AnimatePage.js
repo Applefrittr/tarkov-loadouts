@@ -4,19 +4,20 @@ import { motion } from "framer-motion";
 const AnimatePage = ({ children }) => {
   const animation = {
     initial: { opacity: 0 },
-    animate: { opacity: 1},
+    animate: { opacity: 1 },
     exit: { opacity: 0 },
   };
 
   return (
     <motion.div
+      className="animate-page"
       variants={animation}
       initial="initial"
       animate="animate"
       exit="exit"
       transition={{
         duration: 1,
-        type: "spring"
+        type: "spring",
       }}
     >
       {children}
