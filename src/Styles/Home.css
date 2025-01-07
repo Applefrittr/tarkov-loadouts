@@ -1,7 +1,7 @@
 .home-container {
   color: white;
   width: 100vw;
-  height: 90vh;
+  height: 90lvh;
   background-color: black;
   position: relative;
   overflow-x: scroll;
@@ -65,6 +65,11 @@
 #med-button {
   top: 42%;
   right: 18%;
+}
+
+#challenge-button {
+  top: 42%;
+  left: 30%;
 }
 
 #welcome-container {

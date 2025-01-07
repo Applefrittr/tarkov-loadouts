@@ -1,6 +1,6 @@
 #randomizer-container {
   width: 100vw;
-  height: 90vh;
+  height: 90lvh;
   background-image: url("../Assets/backgrounds/ScavBox.png");
   background-size: cover;
   background-position: bottom;
@@ -15,7 +15,6 @@
 
 .overlay {
   width: inherit;
-  min-height: inherit;
   display: flex;
 }
 
@@ -25,6 +24,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  max-width: 50%;
 }
 
 #equipment-grid {
@@ -127,6 +127,7 @@ header > h1 {
 
 #dialog-img-text > p {
   min-width: 200px;
+  max-width: 700px;
 }
 
 #grid-header {
@@ -188,6 +189,10 @@ footer {
 @media screen and (max-width: 1500px) {
   .overlay {
     flex-direction: column;
+  }
+
+  .overlay-container {
+    max-width: 100%;
   }
 }
 
