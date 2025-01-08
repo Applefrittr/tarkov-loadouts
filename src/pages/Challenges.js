@@ -1,10 +1,10 @@
 import AnimatePage from "../Components/AnimatePage";
 import "../Styles/Challenges.css";
 import { Dialog } from "../Assets/DataObjects";
-import Skier from "../Assets/skier.jpg";
 import challengedata from "../json/challenges.json";
 import { useState } from "react";
 import Scav from "../Assets/scav.png";
+import Jaeger from "../Assets/Jaeger.jpg";
 
 const Challenges = () => {
   const [flipped, setFlipped] = useState(false);
@@ -28,12 +28,12 @@ const Challenges = () => {
               <div id="dialog">
                 <div id="dialog-img-text">
                   <div id="vendor-icon">
-                    <img src={Skier} alt="Skier"></img>
+                    <img src={Jaeger} alt="Jaeger"></img>
                   </div>
-                  <p>{Dialog.Skier}</p>
+                  <p>{Dialog.Jaeger}</p>
                 </div>
                 <div id="dialog-button">
-                  <button id="getGear-button">GET CONTRACT</button>
+                  <button id="getGear-button">GET CHALLENGE</button>
                 </div>
               </div>
             </div>
@@ -44,10 +44,15 @@ const Challenges = () => {
                 <h1>Challenge Card</h1>
               </header>
               <div className="challenge-card">
-                <div className={`card ${flipped ? "" : "flip"}`} onClick={flip}>
-                  <div className="front card-face">Front</div>
-                  <div className="back card-face">
-                    <img src={Scav} alt="scav icon" />
+                <div className="card-sleeve">
+                  <div
+                    className={`card ${flipped ? "" : "flip"}`}
+                    onClick={flip}
+                  >
+                    <div className="front card-face">Front</div>
+                    <div className="back card-face">
+                      <img src={Scav} alt="scav icon" />
+                    </div>
                   </div>
                 </div>
               </div>

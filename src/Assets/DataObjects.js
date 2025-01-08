@@ -11,6 +11,8 @@ import Streets from "../Assets/maps/streets.jpg";
 import GroundZero from "../Assets/maps/groundzero.jpg";
 
 export const Dialog = {
+  Jaeger:
+    "Hunter, I wanted to thank you on behalf of Tarkov for your work thus far.  But as the conflict drags on, more human filth emerges, killing, stealing, raping…  the citizens can only endure so much.  Sniper and I have our hands full so Tarkov needs your services once again.  I’ve a number of tasks that require your attention immediately.  Complete them and report back to me as soon as you can.  Get to it son.",
   Fence:
     "Listen up, mercenary.  In honor of our ongoing partnership, I've instructed my men to keep an eye out for any salvagable gear.  They'll drop whatever found at your hideout, just keep that trigger finger calm when they show up.  All I ask in return is that you keep an eye out for my boys when you're out in the field, got it?",
   Therapist:
