@@ -8,8 +8,21 @@ import Jaeger from "../Assets/Jaeger.jpg";
 
 const Challenges = () => {
   const [flipped, setFlipped] = useState(false);
-  console.log(challengedata);
-  console.log(Object.values(challengedata));
+  const [showCard, setShowCard] = useState(true);
+  const [challenge, setChallenge] = useState(getRandomChallenge());
+
+  const getChallenge = (e) => {
+    e.target.disabled = true;
+    setShowCard(false);
+    setTimeout(() => {
+      setFlipped(false);
+      setTimeout(() => {
+        setChallenge(getRandomChallenge());
+        setShowCard(true);
+        e.target.disabled = false;
+      }, 500);
+    }, 1000);
+  };
 
   const flip = () => {
     setFlipped((prev) => !prev);
@@ -33,7 +46,9 @@ const Challenges = () => {
                   <p>{Dialog.Jaeger}</p>
                 </div>
                 <div id="dialog-button">
-                  <button id="getGear-button">GET CHALLENGE</button>
+                  <button id="getGear-button" onClick={(e) => getChallenge(e)}>
+                    GET CHALLENGE
+                  </button>
                 </div>
               </div>
             </div>
@@ -44,14 +59,19 @@ const Challenges = () => {
                 <h1>Challenge Card</h1>
               </header>
               <div className="challenge-card">
-                <div className="card-sleeve">
-                  <div
-                    className={`card ${flipped ? "" : "flip"}`}
-                    onClick={flip}
-                  >
-                    <div className="front card-face">Front</div>
-                    <div className="back card-face">
-                      <img src={Scav} alt="scav icon" />
+                <div
+                  className={`card-placeholder ${showCard ? "" : "hide-card"}`}
+                  onClick={flip}
+                >
+                  <div className="card-sleeve">
+                    <div className={`card ${flipped ? "" : "flip"}`}>
+                      <div className="front card-face">
+                        <p>{challenge.name}</p>
+                        <p>{challenge.text}</p>
+                      </div>
+                      <div className="back card-face">
+                        <img src={Scav} alt="scav icon" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -65,3 +85,9 @@ const Challenges = () => {
 };
 
 export default Challenges;
+
+function getRandomChallenge() {
+  return Object.values(challengedata)[
+    Math.floor(Math.random() * Object.values(challengedata).length)
+  ];
+}
