@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tarkov-loadouts/static/css/main.b7f6c1f1.css",
-    "main.js": "/tarkov-loadouts/static/js/main.5d9dd199.js",
+    "main.css": "/tarkov-loadouts/static/css/main.b3acbe15.css",
+    "main.js": "/tarkov-loadouts/static/js/main.0f20632c.js",
     "static/media/hideout.png": "/tarkov-loadouts/static/media/hideout.89879901440b34926e4a.png",
     "static/media/inteldesk.png": "/tarkov-loadouts/static/media/inteldesk.b1a8cf6e79f848d91cae.png",
     "static/media/ScavBox.png": "/tarkov-loadouts/static/media/ScavBox.bb746ecea73de842c762.png",
@@ -13,8 +13,10 @@
     "static/media/labs.jpg": "/tarkov-loadouts/static/media/labs.d7acaf458434fa048c90.jpg",
     "static/media/factory1.jpg": "/tarkov-loadouts/static/media/factory1.f92d22323a1f90d39d7c.jpg",
     "static/media/hideout-logo.png": "/tarkov-loadouts/static/media/hideout-logo.2b13663b030769e0a84f.png",
+    "static/media/scav.png": "/tarkov-loadouts/static/media/scav.995086fac08f5554b10d.png",
     "static/media/shoreline.jpg": "/tarkov-loadouts/static/media/shoreline.bade465c3dbf0442b790.jpg",
     "static/media/interchange.jpg": "/tarkov-loadouts/static/media/interchange.325eb24e8476f0c531f4.jpg",
+    "static/media/Jaeger.jpg": "/tarkov-loadouts/static/media/Jaeger.e7d1cc71a2df5c13cc38.jpg",
     "static/media/reserve.jpg": "/tarkov-loadouts/static/media/reserve.42893281a815fc189110.jpg",
     "static/media/skier.jpg": "/tarkov-loadouts/static/media/skier.c8243097e0541b2dd003.jpg",
     "static/media/lighthouse.jpg": "/tarkov-loadouts/static/media/lighthouse.a9977dbd27d7f96c876d.jpg",
@@ -23,11 +25,11 @@
     "static/media/therapist.jpg": "/tarkov-loadouts/static/media/therapist.c35e051be76eac762c17.jpg",
     "static/media/silhouette.png": "/tarkov-loadouts/static/media/silhouette.2e3848d962aaa5176732.png",
     "index.html": "/tarkov-loadouts/index.html",
-    "main.b7f6c1f1.css.map": "/tarkov-loadouts/static/css/main.b7f6c1f1.css.map",
-    "main.5d9dd199.js.map": "/tarkov-loadouts/static/js/main.5d9dd199.js.map"
+    "main.b3acbe15.css.map": "/tarkov-loadouts/static/css/main.b3acbe15.css.map",
+    "main.0f20632c.js.map": "/tarkov-loadouts/static/js/main.0f20632c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7f6c1f1.css",
-    "static/js/main.5d9dd199.js"
+    "static/css/main.b3acbe15.css",
+    "static/js/main.0f20632c.js"
   ]
 }
