@@ -1,10 +1,42 @@
 {
   "1": {
     "name": "Zero to Hero",
-    "text": "You know what to do"
+    "text": "Complete a raid starting only with your knife."
   },
   "2": {
     "name": "Friday the 13th",
-    "text": "Jason lives"
+    "text": "Hunt down and eliminate PMCs with a Jason Mask and your knife."
+  },
+  "3": {
+    "name": "Zero to Hero - Hardcore",
+    "text": "Complete a raid starting with absolutely nothing."
+  },
+  "4": {
+    "name": "Escape from Tarkov",
+    "text": "Complete a full marathon playthrough starting from Ground Zero and extracting on Shoreline."
+  },
+  "5": {
+    "name": "Escape from Tarkov - Hardcore",
+    "text": "Complete a full marathon playthrough starting from Ground Zero and extracting on Shoreline.  Your only starting equipment is your knife."
+  },
+  "6": {
+    "name": "Definitely Not a Scav",
+    "text": "Disguise yourself as a scav, infiltrate, and eliminate other scavs."
+  },
+  "7": {
+    "name": "The Good, the Bad, and the Ugly",
+    "text": "Complete a raid using only revolver type weapons."
+  },
+  "8": {
+    "name": "One in the Chamber",
+    "text": "Complete a raid using only the MP18 OR any rifle WITHOUT magazines."
+  },
+  "9": {
+    "name": "Power of the Sun",
+    "text": "Run an AR or shotgun with the maximum amount of flashlight attachments."
+  },
+  "10": {
+    "name": "Heavy Metal",
+    "text": "Complete a raid using a Machine gun while wearing the Zabrallo and an Altyn."
   }
 }
