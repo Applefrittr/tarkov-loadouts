@@ -3,8 +3,8 @@
   height: 90lvh;
   background-color: black;
   color: white;
-  overflow: scroll;
   scrollbar-width: none;
+  overflow: scroll;
   background-image: url("../Assets/backgrounds/inteldesk.png");
   background-size: cover;
   background-position: center;
