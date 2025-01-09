@@ -1,6 +1,6 @@
 #randomizer-container {
   width: 100vw;
-  height: 90vh;
+  height: 90lvh;
   background-image: url("../Assets/backgrounds/ScavBox.png");
   background-size: cover;
   background-position: bottom;
@@ -16,7 +16,11 @@
 
 .overlay {
   width: inherit;
+
   height: inherit;
+
+  height: inherit;
+
   display: flex;
 }
 
@@ -129,6 +133,7 @@ header > h1 {
 
 #dialog-img-text > p {
   min-width: 200px;
+  max-width: 700px;
 }
 
 #grid-header {

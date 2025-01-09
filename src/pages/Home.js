@@ -27,6 +27,11 @@ const Home = () => {
               Med Station
             </button>
           </Link>
+          <Link to="/challenges" tabIndex="-1">
+            <button id="challenge-button" className="hideout-buttons">
+              Shooting Range
+            </button>
+          </Link>
         </div>
       </section>
     </AnimatePage>

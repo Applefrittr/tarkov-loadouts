@@ -1,0 +1,123 @@
+@keyframes wobble {
+  0% {
+    transform: rotate3d(-5, 5, 5, 2deg);
+  }
+  25% {
+    transform: rotate3d(5, 5, 5, 2deg);
+  }
+  50% {
+    transform: rotate3d(5, -5, -5, 2deg);
+  }
+  75% {
+    transform: rotate3d(-5, -5, -5, 2deg);
+  }
+  100% {
+    transform: rotate3d(-5, 5, 5, 2deg);
+  }
+}
+
+#challenges-container {
+  width: 100vw;
+  height: 90lvh;
+  background-color: black;
+  color: white;
+  overflow: scroll;
+  scrollbar-width: none;
+  background-image: url("../Assets/backgrounds/inteldesk.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.challenge-card-container {
+  border: 1px solid black;
+  outline: 1.25px solid rgb(100, 100, 100);
+  box-shadow: 0 0 5px 0 black;
+}
+
+.challenge-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  perspective: 1000px;
+}
+
+.card-placeholder {
+  width: 300px;
+  height: 450px;
+  transform-style: preserve-3d;
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all ease-in 0.5s;
+  scale: 1;
+}
+
+.hide-card {
+  transform: translate(-50px, 50px);
+  opacity: 0;
+  scale: 0.9;
+}
+
+.card-sleeve {
+  animation: wobble 10s ease-in-out infinite;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-placeholder:hover {
+  cursor: pointer;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 3rem;
+  backface-visibility: hidden;
+  outline: 2px solid rgb(71, 71, 71);
+}
+
+.front {
+  background: whitesmoke;
+  color: black;
+}
+
+.back {
+  background-image: linear-gradient(rgb(71, 71, 71), black);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back > img {
+  width: 150px;
+  height: auto;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 500px) {
+  .card-sleeve {
+    width: 250px;
+    height: 375px;
+  }
+
+  .card-face {
+    padding: 1rem;
+  }
+}
