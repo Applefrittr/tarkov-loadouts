@@ -5,6 +5,7 @@
   color: white;
   display: flex;
   scrollbar-width: none;
+  overflow: scroll;
   background-image: url("../Assets/backgrounds/medstation.png");
   background-size: cover;
   background-position: center;
