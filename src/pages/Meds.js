@@ -62,7 +62,7 @@ const Meds = ({ itemData }) => {
       <section id="meds-container">
         <div className="overlay">
           <div className="overlay-container">
-            <div className="dialog-container" id="med-dialog-container">
+            <div className="dialog-container">
               <header>
                 <h1>Therapist</h1>
               </header>
