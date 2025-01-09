@@ -26,6 +26,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  max-width: 50%;
 }
 
 #equipment-grid {
@@ -189,6 +190,10 @@ footer {
 @media screen and (max-width: 1500px) {
   .overlay {
     flex-direction: column;
+  }
+
+  .overlay-container {
+    max-width: 100%;
   }
 }
 
