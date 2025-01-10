@@ -16,7 +16,7 @@
 
 .overlay {
   width: inherit;
-  height: auto;
+  height: inherit;
   display: flex;
 }
 
