@@ -26,7 +26,6 @@ const Challenges = () => {
 
   const flip = () => {
     setFlipped((prev) => !prev);
-    console.log("flipped!");
   };
 
   return (
@@ -65,10 +64,27 @@ const Challenges = () => {
                 >
                   <div className="card-sleeve">
                     <div className={`card ${flipped ? "" : "flip"}`}>
-                      <div className="front card-face">
+                      <div
+                        className="front card-face"
+                        style={{
+                          backgroundColor: `${
+                            rankColor[challenge.difficulty]
+                              ? rankColor[challenge.difficulty]
+                              : "#C9C9C9"
+                          }`,
+                        }}
+                      >
                         <h3>{challenge.name}</h3>
-                        <img src={challenge.img} alt="task img" />
+                        <img
+                          src={challenge.img}
+                          alt="task img"
+                          className="challenge-img"
+                        />
                         <p>{challenge.objective}</p>
+                        <span className="challenge-rank">
+                          Difficulty:
+                          <img src={challenge.rank} alt="Rank" />
+                        </span>
                       </div>
                       <div className="back card-face">
                         <img src={Scav} alt="scav icon" />
@@ -93,3 +109,10 @@ function getRandomChallenge() {
     Math.floor(Math.random() * Object.values(challengedata).length)
   ];
 }
+
+const rankColor = {
+  easy: "#B0D8A4",
+  normal: "#C9C9C9",
+  hard: "#FEE191",
+  expert: "#E84258",
+};
