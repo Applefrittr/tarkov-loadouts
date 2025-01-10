@@ -1,7 +1,7 @@
 import AnimatePage from "../Components/AnimatePage";
 import "../Styles/Challenges.css";
-import { Dialog } from "../Assets/DataObjects";
-import challengedata from "../json/challenges.json";
+import { Dialog } from "../data/DialogData";
+import challengedata from "../data/challenges.json";
 import { useState } from "react";
 import Scav from "../Assets/scav.png";
 import Jaeger from "../Assets/Jaeger.jpg";
@@ -46,7 +46,7 @@ const Challenges = () => {
                   <p>{Dialog.Jaeger}</p>
                 </div>
                 <div id="dialog-button">
-                  <button id="getGear-button" onClick={(e) => getChallenge(e)}>
+                  <button id="getGear-button" onClick={getChallenge}>
                     GET CHALLENGE
                   </button>
                 </div>
@@ -66,8 +66,9 @@ const Challenges = () => {
                   <div className="card-sleeve">
                     <div className={`card ${flipped ? "" : "flip"}`}>
                       <div className="front card-face">
-                        <p>{challenge.name}</p>
-                        <p>{challenge.text}</p>
+                        <h3>{challenge.name}</h3>
+                        <img src={challenge.img} alt="task img" />
+                        <p>{challenge.objective}</p>
                       </div>
                       <div className="back card-face">
                         <img src={Scav} alt="scav icon" />
@@ -76,6 +77,7 @@ const Challenges = () => {
                   </div>
                 </div>
               </div>
+              <footer></footer>
             </div>
           </div>
         </div>

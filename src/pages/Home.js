@@ -1,7 +1,7 @@
 import "../Styles/Home.css";
 import AnimatePage from "../Components/AnimatePage.js";
 import { Link } from "react-router-dom";
-import { Dialog } from "../Assets/DataObjects.js";
+import { Dialog } from "../data/DialogData";
 
 // Home component.  Idea is a horizontally scrollable background image with button Links to the various components in the app.  May change UI layout for mobile users
 const Home = () => {

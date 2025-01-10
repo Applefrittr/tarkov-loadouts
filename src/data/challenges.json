@@ -1,0 +1,137 @@
+{
+  "1": {
+    "name": "Zero to Hero",
+    "objective": "Survive a raid starting only with your knife.",
+    "img": "./silhouette.png"
+  },
+  "2": {
+    "name": "Friday the 13th",
+    "objective": "Eliminate at least 1 PMC with a Jason Mask and your knife.",
+    "img": "./silhouette.png"
+  },
+  "3": {
+    "name": "Zero to Hero - Hardcore",
+    "objective": "Survive a raid starting with absolutely nothing.",
+    "img": "./silhouette.png"
+  },
+  "4": {
+    "name": "Escape from Tarkov",
+    "objective": "Survive a full marathon playthrough starting from Ground Zero and extracting on Shoreline.",
+    "img": "./silhouette.png"
+  },
+  "5": {
+    "name": "Escape from Tarkov - Hardcore",
+    "objective": "Survive a full marathon playthrough starting from Ground Zero and extracting on Shoreline.  Your only starting equipment is your knife.",
+    "img": "./silhouette.png"
+  },
+  "6": {
+    "name": "Definitely Not a Scav",
+    "objective": "Disguise yourself as a scav, infiltrate, and eliminate other scavs.",
+    "img": "./silhouette.png"
+  },
+  "7": {
+    "name": "The Good, the Bad, and the Ugly",
+    "objective": "Survive a raid using only revolver type weapons.",
+    "img": "./silhouette.png"
+  },
+  "8": {
+    "name": "One in the Chamber",
+    "objective": "Survive a raid using only the MP18 OR any rifle WITHOUT magazines.",
+    "img": "./silhouette.png"
+  },
+  "9": {
+    "name": "Power of the Sun",
+    "objective": "Run an AR or shotgun with the maximum amount of flashlight attachments.",
+    "img": "./silhouette.png"
+  },
+  "10": {
+    "name": "Heavy Metal",
+    "objective": "Survive a raid using a Machine gun while wearing the Zabrallo and an Altyn.",
+    "img": "./silhouette.png"
+  },
+  "11": {
+    "name": "Lending a Hand",
+    "objective": "Stash your kit (valued at least 300k roubles) in any large technical crate and extract.",
+    "img": "./silhouette.png"
+  },
+  "12": {
+    "name": "Kill 'em All",
+    "objective": "Survive a raid while using Killa's loadout - helmet, armor, and the RPK.",
+    "img": "./silhouette.png"
+  },
+  "13": {
+    "name": "Gold Plated",
+    "objective": "Survive using only the gold plated PM pistol.",
+    "img": "./silhouette.png"
+  },
+  "14": {
+    "name": "Desert Eagle POINT FIVE OH",
+    "objective": "Survive a raid using only the Desert Eagle.",
+    "img": "./silhouette.png"
+  },
+  "15": {
+    "name": "Rolling Thunder",
+    "objective": "Bring in and use at least 20+ grenades.",
+    "img": "./silhouette.png"
+  },
+  "16": {
+    "name": "The One",
+    "objective": "Fill your tatical rig with pistols/smgs to use while in raid.  No reloading.",
+    "img": "./silhouette.png"
+  },
+  "17": {
+    "name": "Rat Catcher",
+    "objective": "Eliminate campers at the D2 extraction on Reserve.",
+    "img": "./silhouette.png"
+  },
+  "18": {
+    "name": "Partizan Protege",
+    "objective": "Survive a raid while wearing a beard, beanie, and Partizan's backpack.  Get at least 1 PMC with tripwire grenades.",
+    "img": "./silhouette.png"
+  },
+  "19": {
+    "name": "Weapon Handling",
+    "objective": "Survive a raid while running any Assualt Rifle WITHOUT modifications.",
+    "img": "./silhouette.png"
+  },
+  "20": {
+    "name": "Controlled Distruction",
+    "objective": "Get at least 3 PMC kills with the rotary Grenade Launcher.",
+    "img": "./silhouette.png"
+  },
+  "21": {
+    "name": "Over Exposure",
+    "objective": "Elimate at least 3 PMCs that have been blinded by the KS-23 flash rounds.",
+    "img": "./silhouette.png"
+  },
+  "22": {
+    "name": "Last Resort",
+    "objective": "Survive a raid unsing only the Toz shotgun.",
+    "img": "./silhouette.png"
+  },
+  "23": {
+    "name": "Designated Smoking Area",
+    "objective": "Elimate at least 1 PMC whiled concealed by smoke.",
+    "img": "./silhouette.png"
+  },
+  "24": {
+    "name": "Danger Close",
+    "objective": "Eliminate at least 3 PMCs while using either a Shotgun or SMG.  No armor allowed.",
+    "img": "./silhouette.png"
+  },
+  "25": {
+    "name": "Lumberjack",
+    "objective": "Survive a raid using only the Glock 18 with RIP rounds.",
+    "img": "./silhouette.png"
+  },
+  "27": {
+    "name": "Fight Against the Darkness",
+    "objective": "Survive a nighttime raid with your flashlight on at all times.  No NVGs.",
+    "img": "./silhouette.png"
+  },
+  "28": {
+    "name": "Fence Partnership",
+    "objective": "Eliminate at least 3 PMCs using a loudout purchased from Fence.",
+    "img": "./silhouette.png"
+  }
+}

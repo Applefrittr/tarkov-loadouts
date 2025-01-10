@@ -3,7 +3,7 @@ import Gear from "../Components/Gear";
 import { dataFilter, getRandom } from "./Loadout";
 import "../Styles/Meds.css";
 import AnimatePage from "../Components/AnimatePage";
-import { Dialog } from "../Assets/DataObjects";
+import { Dialog } from "../data/DialogData";
 import { AnimatePresence, motion } from "framer-motion";
 import Therapist from "../Assets/therapist.jpg";
 
