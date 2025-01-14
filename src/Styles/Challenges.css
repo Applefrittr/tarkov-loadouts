@@ -104,8 +104,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  /* background-color: #c9c9c9;
-  background-color: #e84258; */
 }
 
 .challenge-img {
@@ -149,16 +147,17 @@
 }
 
 .challenge-tracker {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  max-height: 100%;
+  margin-bottom: auto;
 }
 
 .challenge-tracker-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   align-items: center;
+}
+
+.challenge-tracker-header > h2 {
+  width: 325px;
 }
 
 @media screen and (max-width: 500px) {
@@ -179,5 +178,9 @@
   .challenge-rank > img {
     width: 40px;
     height: auto;
+  }
+
+  .challenge-tracker-header > h2 {
+    width: auto;
   }
 }

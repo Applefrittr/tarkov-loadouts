@@ -27,7 +27,7 @@ const rankColor = {
   easy: "#B0D8A4",
   normal: "#C9C9C9",
   hard: "#FEE191",
-  expert: "#E84258",
+  expert: "#B23A48",
 };
 
 const Challenges = ({ completed, addCompleted, clearCompleted }) => {
@@ -88,8 +88,9 @@ const Challenges = ({ completed, addCompleted, clearCompleted }) => {
           </div>
           <div className="overlay-container">
             <div className="challenge-card-container">
-              <header>
+              <header id="grid-header">
                 <h1>Challenge Card</h1>
+                <p id="grid-header-tip">Click to flip card</p>
               </header>
               <div className="challenge-card-subcontainer">
                 {challenge && (
@@ -108,6 +109,11 @@ const Challenges = ({ completed, addCompleted, clearCompleted }) => {
                               rankColor[challenge.difficulty]
                                 ? rankColor[challenge.difficulty]
                                 : "#C9C9C9"
+                            }`,
+                            color: `${
+                              challenge.difficulty === "expert"
+                                ? "white"
+                                : "black"
                             }`,
                           }}
                         >

@@ -194,5 +194,12 @@
     "img": "./images/Assessmentpt3.jpg",
     "rank": "./images/Rank75.png",
     "difficulty": "expert"
+  },
+  "30": {
+    "name": "Are You Not Entertained?",
+    "objective": "Eliminate Tagilla with your knife.  You cannot damage him by any other means.",
+    "img": "./images/Tagill_Quest.jpg",
+    "rank": "./images/Rank75.png",
+    "difficulty": "expert"
   }
 }
