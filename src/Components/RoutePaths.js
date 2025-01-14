@@ -14,6 +14,26 @@ const RoutePaths = (props) => {
   const location = useLocation();
   const [allItems, setAllItems] = useState(null);
   const [allMaps, setAllMaps] = useState(null);
+  const [completedChallenges, setCompletedChallenges] = useState(() => {
+    const tasks = localStorage.getItem("completed-challenges");
+    return tasks ? JSON.parse(tasks) : [];
+  });
+
+  const addCompletedChallenge = (challenge) => {
+    let tasks = localStorage.getItem("completed-challenges");
+    if (tasks) {
+      if (JSON.parse(tasks).indexOf(challenge) > -1) return;
+      else tasks = [...JSON.parse(tasks), challenge];
+    } else tasks = [challenge];
+    //tasks ? (tasks = [...JSON.parse(tasks), challenge]) : (tasks = [challenge]);
+    localStorage.setItem("completed-challenges", JSON.stringify(tasks));
+    setCompletedChallenges((prev) => [...prev, challenge]);
+  };
+
+  const clearCompletedChallenges = () => {
+    localStorage.clear();
+    setCompletedChallenges([]);
+  };
 
   useEffect(() => {
     const getData = async () => {
@@ -33,7 +53,16 @@ const RoutePaths = (props) => {
           <Route path="/loadout" element={<Loadout itemData={allItems} />} />
           <Route path="/meds" element={<Meds itemData={allItems} />} />
           <Route path="/maps" element={<Maps mapData={allMaps} />} />
-          <Route path="/challenges" element={<Challenges />} />
+          <Route
+            path="/challenges"
+            element={
+              <Challenges
+                completed={completedChallenges}
+                addCompleted={addCompletedChallenge}
+                clearCompleted={clearCompletedChallenges}
+              />
+            }
+          />
         </Routes>
       )}
     </AnimatePresence>
