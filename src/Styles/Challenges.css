@@ -146,6 +146,14 @@
   transform: rotateY(180deg);
 }
 
+.completed-banner {
+  height: 450px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .challenge-tracker {
   margin-bottom: auto;
 }
@@ -173,6 +181,10 @@
   .back > img {
     width: 100px;
     height: auto;
+  }
+  .completed-banner {
+    width: 250px;
+    height: 375px;
   }
 
   .challenge-rank > img {

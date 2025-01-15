@@ -60,6 +60,14 @@ const Challenges = ({ completed, addCompleted, clearCompleted }) => {
 
   useEffect(() => {
     setAvailable(getAvailableChallenges(completed));
+    if (completed.length === 0) {
+      setChallenge(getRandomChallenge(AllChallenges));
+      setShowCard(false);
+      setFlipped(false);
+      setTimeout(() => {
+        setShowCard(true);
+      }, 1000);
+    }
   }, [completed]);
 
   return (
@@ -144,10 +152,13 @@ const Challenges = ({ completed, addCompleted, clearCompleted }) => {
                     </button>
                   </div>
                 )}
-                {!challenge && <h2>ALL CHALLENGES COMPLETE</h2>}
+                {!challenge && (
+                  <h3 className="completed-banner">ALL CHALLENGES COMPLETE</h3>
+                )}
                 <ChallengeTracker
                   challenges={completed}
                   clearCompleted={clearCompleted}
+                  total={Object.keys(AllChallenges).length}
                 />
               </div>
               <footer></footer>

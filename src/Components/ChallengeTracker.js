@@ -1,8 +1,10 @@
-const ChallengeTracker = ({ challenges, clearCompleted }) => {
+const ChallengeTracker = ({ challenges, clearCompleted, total }) => {
   return (
     <section className="challenge-tracker">
       <div className="challenge-tracker-header">
-        <h2>Completed Challenges {challenges.length}/30</h2>
+        <h2>
+          Completed Challenges {challenges.length}/{total}
+        </h2>
         <button id="getGear-button" onClick={clearCompleted}>
           CLEAR
         </button>
