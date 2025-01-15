@@ -1,15 +1,3 @@
-import Customs from "../Assets/maps/customs.jpg";
-import Factory from "../Assets/maps/factory.jpg";
-import Factory1 from "../Assets/maps/factory1.jpg";
-import Reserve from "../Assets/maps/reserve.jpg";
-import Lighthouse from "../Assets/maps/lighthouse.jpg";
-import Shoreline from "../Assets/maps/shoreline.jpg";
-import Woods from "../Assets/maps/woods.jpg";
-import Interchange from "../Assets/maps/interchange.jpg";
-import Labs from "../Assets/maps/labs.jpg";
-import Streets from "../Assets/maps/streets.jpg";
-import GroundZero from "../Assets/maps/groundzero.jpg";
-
 export const Dialog = {
   Jaeger:
     "Hunter, I wanted to thank you on behalf of Tarkov for your work thus far.  But as the conflict drags on, more human filth emerges, killing, stealing, raping…  the citizens can only endure so much.  Sniper and I have our hands full so Tarkov needs your services once again.  I’ve a number of tasks that require your attention immediately.  Complete them and report back to me as soon as you can.  Get to it son.",
@@ -22,50 +10,3 @@ export const Dialog = {
   Hideout:
     "Welcome to the Hideout.  Look around (scroll) and check for messages from local contacts.  Click Hideout in the navigation bar to return here.  Gear up and Escape from Tarkov! ",
 };
-
-export const AllMaps = [
-  {
-    name: "Customs",
-    img: Customs,
-  },
-  {
-    name: "Factory",
-    img: Factory1,
-  },
-  {
-    name: "Night Factory",
-    img: Factory,
-  },
-  {
-    name: "Reserve",
-    img: Reserve,
-  },
-  {
-    name: "Lighthouse",
-    img: Lighthouse,
-  },
-  {
-    name: "Shoreline",
-    img: Shoreline,
-  },
-  {
-    name: "Woods",
-    img: Woods,
-  },
-  {
-    name: "Interchange",
-    img: Interchange,
-  },
-  {
-    name: "The Lab",
-    img: Labs,
-  },
-  {
-    name: "Streets of Tarkov",
-    img: Streets,
-  },
-  {
-    name: "Ground Zero",
-    img: GroundZero,
-  },
-];

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../Styles/Randomizer.css";
 import Gear from "../Components/Gear";
-import { Dialog } from "../Assets/DataObjects";
+import { Dialog } from "../data/DialogData";
 import Fence from "../Assets/Fence.jpg";
 import { AnimatePresence, motion } from "framer-motion";
 import AnimatePage from "../Components/AnimatePage";

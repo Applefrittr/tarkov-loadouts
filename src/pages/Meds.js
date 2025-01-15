@@ -3,7 +3,7 @@ import Gear from "../Components/Gear";
 import { dataFilter, getRandom } from "./Loadout";
 import "../Styles/Meds.css";
 import AnimatePage from "../Components/AnimatePage";
-import { Dialog } from "../Assets/DataObjects";
+import { Dialog } from "../data/DialogData";
 import { AnimatePresence, motion } from "framer-motion";
 import Therapist from "../Assets/therapist.jpg";
 
@@ -62,7 +62,7 @@ const Meds = ({ itemData }) => {
       <section id="meds-container">
         <div className="overlay">
           <div className="overlay-container">
-            <div className="dialog-container" id="med-dialog-container">
+            <div className="dialog-container">
               <header>
                 <h1>Therapist</h1>
               </header>

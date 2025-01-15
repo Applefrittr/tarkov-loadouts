@@ -32,26 +32,30 @@
   border: 1px solid black;
   outline: 1.25px solid rgb(100, 100, 100);
   box-shadow: 0 0 5px 0 black;
+  backdrop-filter: blur(5px);
 }
 
-.challenge-card {
+.challenge-card-subcontainer {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
   padding: 3rem;
   background-color: rgba(0, 0, 0, 0.65);
   perspective: 1000px;
 }
 
 .card-placeholder {
-  width: 300px;
-  height: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   transform-style: preserve-3d;
   opacity: 1;
   transform: translate(0px, 0px);
   transition: all ease-in 0.5s;
   scale: 1;
+  align-items: center;
 }
 
 .hide-card {
@@ -63,8 +67,8 @@
 .card-sleeve {
   animation: wobble 10s ease-in-out infinite;
   transform-style: preserve-3d;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 450px;
 }
 
 .card {
@@ -79,19 +83,50 @@
   cursor: pointer;
 }
 
+.card-placeholder > button {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  width: fit-content;
+}
+
 .card-face {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  padding: 3rem;
   backface-visibility: hidden;
   outline: 2px solid rgb(71, 71, 71);
 }
 
 .front {
-  background: whitesmoke;
+  padding: 1.5rem;
   color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.challenge-img {
+  width: 100%;
+  height: auto;
+  max-height: 45%;
+  background-color: black;
+  outline: 2px solid rgb(71, 71, 71);
+}
+
+.challenge-rank {
+  background-color: black;
+  margin: auto 0 0 auto;
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.15rem 0.5rem;
+}
+
+.challenge-rank > img {
+  width: 50px;
+  height: auto;
 }
 
 .back {
@@ -111,6 +146,28 @@
   transform: rotateY(180deg);
 }
 
+.completed-banner {
+  height: 450px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.challenge-tracker {
+  margin-bottom: auto;
+}
+
+.challenge-tracker-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.challenge-tracker-header > h2 {
+  width: 325px;
+}
+
 @media screen and (max-width: 500px) {
   .card-sleeve {
     width: 250px;
@@ -119,5 +176,23 @@
 
   .card-face {
     padding: 1rem;
+  }
+
+  .back > img {
+    width: 100px;
+    height: auto;
+  }
+  .completed-banner {
+    width: 250px;
+    height: 375px;
+  }
+
+  .challenge-rank > img {
+    width: 40px;
+    height: auto;
+  }
+
+  .challenge-tracker-header > h2 {
+    width: auto;
   }
 }

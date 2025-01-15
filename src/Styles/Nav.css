@@ -58,7 +58,7 @@
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.65);
-  display: none;
+  display: flex;
   z-index: 50;
   justify-content: center;
   align-items: center;

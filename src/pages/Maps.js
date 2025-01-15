@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import "../Styles/Maps.css";
-import { AllMaps } from "../Assets/DataObjects";
+import { AllMaps } from "../data/MapData";
 import AnimatePage from "../Components/AnimatePage";
-import { Dialog } from "../Assets/DataObjects";
+import { Dialog } from "../data/DialogData";
 import Skier from "../Assets/skier.jpg";
 import { AnimatePresence, motion } from "framer-motion";
 
