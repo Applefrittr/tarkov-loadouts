@@ -13,14 +13,14 @@ const Nav = () => {
 
   return (
     <section className="navbar">
-      <div className="nav-header">
-        <img src={Logo} alt=""></img>
+      <Link to="/" tabIndex="-1" className="nav-header">
+        <img src={Logo} alt="" className="nav-logo"></img>
         <h1>Tarkov Loadouts</h1>
-      </div>
+      </Link>
       <div className="nav-button-container">
-        <Link to="/" tabIndex="-1">
+        {/* <Link to="/" tabIndex="-1">
           <button className="nav-buttons">Hideout</button>
-        </Link>
+        </Link> */}
         <button className="nav-buttons" onClick={toggleAbout}>
           About
         </button>
