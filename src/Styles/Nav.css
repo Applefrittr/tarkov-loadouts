@@ -54,14 +54,6 @@
   scale: 95%;
 }
 
-.stereo-controls {
-  position: absolute;
-  z-index: 5;
-  background-color: black;
-  right: 0;
-  bottom: -50%;
-}
-
 #about-section {
   position: absolute;
   width: 100vw;

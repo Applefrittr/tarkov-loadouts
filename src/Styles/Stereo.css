@@ -1,0 +1,79 @@
+.stereo-container {
+  position: absolute;
+  z-index: 5;
+  background-color: black;
+  right: 0;
+  bottom: -100%;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.stereo-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.stereo-btn {
+  appearance: none;
+  background-color: black;
+  outline: none;
+  border: none;
+}
+
+.stereo-btn:hover {
+  cursor: pointer;
+}
+
+.stereo-btn > img {
+  width: 25px;
+  height: auto;
+}
+
+.volume-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.volume-container > img {
+  width: 20px;
+  height: auto;
+}
+
+.volume-slider {
+  appearance: none;
+  height: 5px;
+  width: 100px;
+  background-color: grey;
+  accent-color: white;
+  border-radius: 10px;
+}
+
+.volume-slider::-moz-range-progress {
+  appearance: none;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
