@@ -34,7 +34,7 @@ const Challenges = ({ completed, addCompleted, clearCompleted }) => {
   const [flipped, setFlipped] = useState(false);
   const [showCard, setShowCard] = useState(true);
   const [available, setAvailable] = useState(getAvailableChallenges(completed));
-  const [challenge, setChallenge] = useState(null);
+  const [challenge, setChallenge] = useState(getRandomChallenge(available));
 
   const getChallenge = (e) => {
     e.target.disabled = true;
