@@ -37,6 +37,7 @@
   border: none;
   outline: none;
   color: white;
+  position: relative;
 }
 
 .nav-buttons:focus {
@@ -51,6 +52,14 @@
 .nav-buttons:active {
   background-image: linear-gradient(rgb(146, 146, 146), rgb(83, 83, 83));
   scale: 95%;
+}
+
+.stereo-controls {
+  position: absolute;
+  z-index: 5;
+  background-color: black;
+  right: 0;
+  bottom: -50%;
 }
 
 #about-section {
