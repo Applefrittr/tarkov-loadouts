@@ -1,7 +1,7 @@
 #randomizer-container {
   width: 100vw;
   height: 90lvh;
-  background-image: url("../Assets/backgrounds/ScavBox.png");
+  background: black url("../Assets/backgrounds/ScavBox.png");
   background-size: cover;
   background-position: bottom;
   color: white;

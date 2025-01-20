@@ -19,9 +19,11 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
-.nav-header > img {
+.nav-logo {
   width: 45px;
   height: auto;
 }
@@ -35,6 +37,7 @@
   border: none;
   outline: none;
   color: white;
+  position: relative;
 }
 
 .nav-buttons:focus {

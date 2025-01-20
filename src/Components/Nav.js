@@ -3,24 +3,31 @@ import "../Styles/Nav.css";
 import Logo from "../Assets/silhouette.png";
 import { useState } from "react";
 import Git from "../Assets/gitWHITE.png";
+import Stereo from "./Stereo";
 
 const Nav = () => {
   const [about, setAbout] = useState(false);
+  const [stereo, setStereo] = useState(false);
 
   const toggleAbout = () => {
     setAbout((prev) => !prev);
   };
 
+  const toggleStereo = () => {
+    setStereo((prev) => !prev);
+  };
+
   return (
     <section className="navbar">
-      <div className="nav-header">
-        <img src={Logo} alt=""></img>
+      <Link to="/" tabIndex="-1" className="nav-header">
+        <img src={Logo} alt="" className="nav-logo"></img>
         <h1>Tarkov Loadouts</h1>
-      </div>
+      </Link>
       <div className="nav-button-container">
-        <Link to="/" tabIndex="-1">
-          <button className="nav-buttons">Hideout</button>
-        </Link>
+        <button className="nav-buttons" onClick={toggleStereo}>
+          Stereo
+        </button>
+        <Stereo stereo={stereo} />
         <button className="nav-buttons" onClick={toggleAbout}>
           About
         </button>
