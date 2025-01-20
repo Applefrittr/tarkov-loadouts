@@ -1,11 +1,10 @@
 #maps-container {
   width: 100vw;
   height: 90lvh;
-  background-color: black;
+  background: black url("../Assets/backgrounds/inteldesk.png");
   color: white;
   scrollbar-width: none;
   overflow: scroll;
-  background-image: url("../Assets/backgrounds/inteldesk.png");
   background-size: cover;
   background-position: center;
 }

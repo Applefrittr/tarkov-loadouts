@@ -1,12 +1,11 @@
 #meds-container {
   width: 100vw;
   height: 90lvh;
-  background-color: black;
   color: white;
   display: flex;
   scrollbar-width: none;
   overflow: scroll;
-  background-image: url("../Assets/backgrounds/medstation.png");
+  background: black url("../Assets/backgrounds/medstation.png");
   background-size: cover;
   background-position: center;
 }
