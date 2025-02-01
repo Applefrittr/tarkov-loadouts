@@ -8,5 +8,5 @@ export const Dialog = {
   Skier:
     "Merc, need you ASAP.  The increase in PMC activity across the region has slowed trade to a halt and killed my business.  I've sent a couple of my guys out to scare them off but none have returned.  Fuck them, I need a professional.  There contracts ready to go for each locale in Tarkov, player's choice.  Do what you do best and deal with these bastards, okay?  I've got a few things lined up for you when you return.",
   Hideout:
-    "Welcome to the Hideout.  Look around (scroll) and check for messages from local contacts.  Click Tarkov Loadouts in the navigation bar to return here.  Gear up and Escape from Tarkov! ",
+    "Welcome to the Hideout.  Look around (scroll) and check for messages from local contacts.  Click Tarkov Loadouts in the navigation bar to return here.  Gear up, survive, and Escape from Tarkov! ",
 };
