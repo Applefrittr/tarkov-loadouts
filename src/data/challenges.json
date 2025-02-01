@@ -36,28 +36,28 @@
   },
   "6": {
     "name": "Definitely Not a Scav",
-    "objective": "Disguise yourself as a scav, infiltrate, and eliminate 3 other scavs.",
+    "objective": "Disguise yourself as a scav, infiltrate, and eliminate 3 other scavs in a single raid.",
     "img": "./images/DebutQuest.jpg",
     "rank": "./images/Rank60.png",
     "difficulty": "hard"
   },
   "7": {
     "name": "The Good, the Bad, and the Ugly",
-    "objective": "Eliminate 3 PMCs using only revolver type weapons.",
+    "objective": "Eliminate 3 PMCs using only revolver type weapons in a single raid.",
     "img": "./images/The_survivalist_path_Tough_guy.jpg",
     "rank": "./images/Rank40.png",
     "difficulty": "normal"
   },
   "8": {
     "name": "One in the Chamber",
-    "objective": "Eliminate 3 PMCs using only the MP18 OR any rifle WITHOUT magazines.",
+    "objective": "Eliminate 3 PMCs using only the MP18 OR any rifle WITHOUT magazines in a single raid.",
     "img": "./images/Friend_from_the_West.jpg",
     "rank": "./images/Rank40.png",
     "difficulty": "normal"
   },
   "9": {
     "name": "Power of the Sun",
-    "objective": "Eliminate 3 PMCs using an AR or a shotgun with the maximum amount of flashlight attachments.",
+    "objective": "Eliminate 3 PMCs using an AR or a shotgun with the maximum amount of flashlight attachments in a single raid.",
     "img": "./images/Huntsman_path_Controller.jpg",
     "rank": "./images/Rank1.png",
     "difficulty": "easy"
@@ -78,21 +78,21 @@
   },
   "12": {
     "name": "Kill 'em All",
-    "objective": "Eliminate 3 PMCs while using Killa's loadout - helmet, armor, and the RPK.",
+    "objective": "Eliminate 3 PMCs while using Killa's loadout - helmet, armor, and the RPK - in a single raid.",
     "img": "./images/Huntsman_path_Sell-out.jpg",
     "rank": "./images/Rank40.png",
     "difficulty": "normal"
   },
   "13": {
     "name": "Gold Plated",
-    "objective": "Eliminate 3 PMCs using the gold plated PM pistol.",
+    "objective": "Eliminate 3 PMCs using the gold plated PM pistol in a single raid.",
     "img": "./images/The_Good_Times_-_Part_2.jpg",
     "rank": "./images/Rank60.png",
     "difficulty": "hard"
   },
   "14": {
     "name": "Desert Eagle POINT FIVE OH",
-    "objective": "Eliminate 3 PMCs using the Desert Eagle.",
+    "objective": "Eliminate 3 PMCs using the Desert Eagle in a single raid.",
     "img": "./images/DEagle_L6_Image.png",
     "rank": "./images/Rank60.png",
     "difficulty": "hard"
@@ -106,7 +106,7 @@
   },
   "16": {
     "name": "The One",
-    "objective": "Fill your tatical rig with Pistols/SMGs to use while in raid.  Eliminate 4 PMCs, no reloading.",
+    "objective": "Fill your tatical rig with Pistols/SMGs to use while in raid.  Eliminate 4 PMCs, no reloading, in a single raid.",
     "img": "./images/Decisions_Decision.jpg",
     "rank": "./images/Rank75.png",
     "difficulty": "expert"
@@ -127,28 +127,28 @@
   },
   "19": {
     "name": "Weapon Handling",
-    "objective": "Eliminate 3 PMCs with any Assualt Rifle WITHOUT modifications.",
+    "objective": "Eliminate 3 PMCs with any Assualt Rifle WITHOUT modifications in a single raid.",
     "img": "./images/Balancing.jpg",
     "rank": "./images/Rank40.png",
     "difficulty": "normal"
   },
   "20": {
     "name": "Controlled Distruction",
-    "objective": "Eliminate 3 PMC with the M32A1 Grenade Launcher.",
+    "objective": "Eliminate 3 PMC with the M32A1 Grenade Launcher in a single raid.",
     "img": "./images/M32A1inspect.png",
     "rank": "./images/Rank40.png",
     "difficulty": "normal"
   },
   "21": {
     "name": "Over Exposure",
-    "objective": "Elimate 3 PMCs that have been blinded by the KS-23 flash rounds.",
+    "objective": "Elimate 3 PMCs that have been blinded by the KS-23 flash rounds in a single raid.",
     "img": "./images/Huntsman_path_Controller.jpg",
     "rank": "./images/Rank1.png",
     "difficulty": "easy"
   },
   "22": {
     "name": "Last Resort",
-    "objective": "Eliminate 3 PMCs with the TOZ shotgun.",
+    "objective": "Eliminate 3 PMCs with the TOZ shotgun in a single raid.",
     "img": "./images/Toz.png",
     "rank": "./images/Rank60.png",
     "difficulty": "hard"
@@ -162,14 +162,14 @@
   },
   "24": {
     "name": "Danger Close",
-    "objective": "Eliminate at least 3 PMCs while using either a Shotgun or SMG.  No armor allowed.",
+    "objective": "Eliminate at least 3 PMCs while using either a Shotgun or SMG in a single raid.  No armor allowed.",
     "img": "./images/The_Punisher.jpg",
     "rank": "./images/Rank60.png",
     "difficulty": "hard"
   },
   "25": {
     "name": "Lumberjack",
-    "objective": "Eliminate 3 PMCs using the Glock 18 with RIP rounds.",
+    "objective": "Eliminate 3 PMCs using the Glock 18 with RIP rounds, in a single raid.",
     "img": "./images/Glock18CImage.png",
     "rank": "./images/Rank40.png",
     "difficulty": "normal"
@@ -183,14 +183,14 @@
   },
   "28": {
     "name": "Fence Partnership",
-    "objective": "Eliminate 3 PMCs using a loudout purchased from Fence, including ammo.",
+    "objective": "Eliminate 3 PMCs using a loudout purchased from Fence, including ammo, in a single raid.",
     "img": "./images/Fence_Quest.jpg",
     "rank": "./images/Rank60.png",
     "difficulty": "hard"
   },
   "29": {
     "name": "Laboratory Lockdown",
-    "objective": "Eliminate 5 PMCs and 10 Raiders on Labs.",
+    "objective": "Eliminate 5 PMCs and 10 Raiders on Labs in a single raid.",
     "img": "./images/Assessmentpt3.jpg",
     "rank": "./images/Rank75.png",
     "difficulty": "expert"
