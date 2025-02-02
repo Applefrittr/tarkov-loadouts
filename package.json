@@ -2,7 +2,7 @@
   "name": "tarkov-loadouts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Applefrittr.github.io/tarkov-loadouts",
+  "homepage": "https://www.tarkov-loadouts.com",
   "dependencies": {
     "framer-motion": "^10.0.1",
     "gh-pages": "^5.0.0",
