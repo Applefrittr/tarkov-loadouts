@@ -9,6 +9,7 @@ Special thanks to the folks over at [Tarkov.dev](https://tarkov.dev/api/) for pr
 - Loadout randomizer w/ item descriptions and current vendors prices
 - Map selector with option to veto maps from the pool
 - Injector cocktail - randomize 4 injectors to use during raid
+- Jaeger Challenges - Draw a random challenge to complete in-game
 
 ## Live Site & Demo
 
