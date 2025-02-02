@@ -6,7 +6,7 @@ import Logo from "./Assets/hideout-logo.png";
 
 const RouteSwitch = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/tarkov-loadouts">
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
