@@ -1,0 +1,47 @@
+#nopage-container {
+  color: white;
+  width: 100vw;
+  height: 90lvh;
+  background-color: black;
+  position: relative;
+  background-image: url("../Assets/backgrounds/exit.png");
+  background-size: cover;
+  background-position: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.nopage-elements {
+  padding: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid black;
+  outline: 1.25px solid rgb(100, 100, 100);
+  backdrop-filter: blur(5px);
+  transform: translate(-50%, -50%);
+}
+
+.nopage-elements > {
+  font-weight: bolder;
+}
+
+.nopage-btn {
+  text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .nopage-elements {
+    padding: 1rem;
+  }
+
+  .nopage-elements > h2 {
+    font-size: medium;
+  }
+}
