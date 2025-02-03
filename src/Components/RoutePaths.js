@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Meds from "../pages/Meds.js";
 import Maps from "../pages/Maps.js";
 import Challenges from "../pages/Challenges.js";
+import NoPage from "../pages/NoPage.js";
 import { getTarkovData } from "../api/tarkov-dev";
 
 // RoutePaths component to render our Routes and ensure that exit animations execute when compnennts are unmounted.  Also holds our API fetch request and stores the results
@@ -63,6 +64,7 @@ const RoutePaths = (props) => {
               />
             }
           />
+          <Route path="*" element={<NoPage />} />
         </Routes>
       )}
     </AnimatePresence>
