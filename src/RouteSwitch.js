@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import RoutePaths from "./Components/RoutePaths.js";
 import Nav from "./Components/Nav";
 import { motion } from "framer-motion";
@@ -6,7 +6,7 @@ import Logo from "./Assets/hideout-logo.png";
 
 const RouteSwitch = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -19,7 +19,7 @@ const RouteSwitch = () => {
           <img src={Logo} alt="logo" />
         </div>
       </motion.section>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
