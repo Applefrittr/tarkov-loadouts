@@ -19,7 +19,7 @@ export async function getTarkovData() {
     },
     body: JSON.stringify({
       query: `{
-                items(categoryNames: ["Headphones", "Armor", "Headwear", "ChestRig", "Backpack", "Weapon", "Meds"]){
+                items(categoryNames: ["Headphones", "Armor", "Headwear", "Chest rig", "Backpack", "Weapon", "Meds"]){
                   name
                   shortName
                   types

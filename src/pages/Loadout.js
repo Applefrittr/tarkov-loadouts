@@ -75,12 +75,14 @@ function Loadout({ itemData }) {
     if (!helmet.blocksHeadphones) {
       let headphone = getRandom(headPhones);
 
-      // This filters out RAC style headphones.  As it stands, RAC style headphones can be rolled with any helmet that can use headphones - which is not possible in game
+      // This filters conflicts between helmets and headphones.  Checks BOTH conflicting items arrays in the helmet and the headphone
       while (
         headphone.conflictingItems
           .map((item) => item.name)
           .indexOf(helmet.name) > -1 ||
-        headphone.blocksHeadphones
+        helmet.conflictingItems
+          .map((item) => item.name)
+          .indexOf(headphone.name) > -1
       ) {
         headphone = getRandom(headPhones);
       }
