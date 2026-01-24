@@ -46,8 +46,8 @@ const Nav = () => {
               </a>
               . Designed with randomization in mind, players can use it create
               unique loadouts for their in-game raids. Features include
-              randomized gear, medical injector combinations, and a random map
-              selector.
+              randomized gear, medical injector combinations, Jaeger challenges,
+              and a random map selector.
             </p>
             <p>
               Item images and descriptions curtesy of{" "}
@@ -75,6 +75,16 @@ const Nav = () => {
                 <img src={Git} alt="GitHub Applefrittr" id="git-icon" />
               </a>
             </div>
+            <p>
+              Reach out if you encounter any issues!{" "}
+              <a
+                href="https://www.reddit.com/user/applefrittr/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                u/applefrittr
+              </a>
+            </p>
             <div id="ip-credit">
               Game content and materials are trademarks and copyright of Battle
               State Games and its licensors. All rights reserved.
