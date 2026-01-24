@@ -70,3 +70,15 @@ code {
     height: 150px;
   }
 }
+
+.error-container {
+  background-image: -moz-linear-gradient(rgb(255, 92, 92), rgb(255, 36, 36));
+  padding: 2rem;
+  width: max-content;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.error-reveal {
+  opacity: 1;
+}

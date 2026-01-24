@@ -15,6 +15,7 @@ const RoutePaths = (props) => {
   const location = useLocation();
   const [allItems, setAllItems] = useState(null);
   const [allMaps, setAllMaps] = useState(null);
+  const [dataError, setDataError] = useState(null);
   const [completedChallenges, setCompletedChallenges] = useState(() => {
     const tasks = localStorage.getItem("completed-challenges");
     return tasks ? JSON.parse(tasks) : [];
@@ -45,7 +46,7 @@ const RoutePaths = (props) => {
         setAllMaps(maps);
       } catch (error) {
         console.log("Error fetching data: ", error.message);
-        // display error card in UI
+        setDataError(error.message);
       }
     };
 
@@ -73,6 +74,11 @@ const RoutePaths = (props) => {
           <Route path="*" element={<NoPage />} />
         </Routes>
       )}
+
+      <div className={`error-container ${dataError ? "error-reveal" : ""}`}>
+        <h2>Hideout Error</h2>
+        <p>{dataError}</p>
+      </div>
     </AnimatePresence>
   );
 };
