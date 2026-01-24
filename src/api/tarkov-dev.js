@@ -1,6 +1,16 @@
 // fetch request to api.tarkov.dev Graphql.  This fetch request in effect pulls the ENITRE item dataset from Escape from Tarkov as well as the maps.  The items dataset then
 // gets filtered by child components to be rendered and displayed out to the user in the UI
+
+const TTL = 300000; // 5 minutes
+
 export async function getTarkovData() {
+  const storedData = localStorage.getItem("tarkov item data");
+  const parsedData = JSON.parse(storedData);
+
+  if (storedData && parsedData.exp > Date.now()) {
+    return { items: parsedData.items, maps: parsedData.maps };
+  }
+
   const allItems = await fetch("https://api.tarkov.dev/graphql", {
     method: "POST",
     headers: {
@@ -53,11 +63,22 @@ export async function getTarkovData() {
     }),
   });
   const data = await allItems.json();
-  console.log(data);
 
   if (data.errors) {
     throw new Error("Unable to retrieve Tarkov Item data");
   }
 
-  return { items: data.data.items, maps: data.data.maps };
+  const items = data.data.items;
+  const maps = data.data.maps;
+
+  localStorage.setItem(
+    "tarkov item data",
+    JSON.stringify({
+      items,
+      maps,
+      exp: Date.now() + TTL,
+    })
+  );
+
+  return { items, maps };
 }
