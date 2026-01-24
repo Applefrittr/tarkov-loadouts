@@ -9,50 +9,55 @@ export async function getTarkovData() {
     },
     body: JSON.stringify({
       query: `{
-              items(categoryNames: [Headphones, Armor, Headwear, ChestRig, Backpack, Weapon, Meds]){
-                name
-                shortName
-                types
-                description
-                blocksHeadphones
-                conflictingItems {
+                items(categoryNames: ["Headphones", "Armor", "Headwear", "ChestRig", "Backpack", "Weapon", "Meds"]){
                   name
-                }
-                inspectImageLink
-                buyFor {
-                  price
-                  currency
-                  vendor {
+                  shortName
+                  types
+                  description
+                  blocksHeadphones
+                  conflictingItems {
                     name
                   }
-                }
-                properties {
-                  __typename
-                  ...on ItemPropertiesWeapon {
-                    defaultPreset {
-                      shortName
-                      inspectImageLink
-                      buyFor {
-                        price
-                        currency
-                        vendor {
-                          name
+                  inspectImageLink
+                  buyFor {
+                    price
+                    currency
+                    vendor {
+                      name
+                    }
+                  }
+                  properties {
+                    __typename
+                    ...on ItemPropertiesWeapon {
+                      defaultPreset {
+                        shortName
+                        inspectImageLink
+                        buyFor {
+                          price
+                          currency
+                          vendor {
+                            name
+                          }
                         }
                       }
                     }
                   }
                 }
-              }
-              maps {
-                name
-                description
-                enemies
-                raidDuration
-              }
-          }`,
+                maps {
+                  name
+                  description
+                  enemies
+                  raidDuration
+                }
+            }`,
     }),
   });
   const data = await allItems.json();
+  console.log(data);
+
+  if (data.errors) {
+    throw new Error("Unable to retrieve Tarkov Item data");
+  }
 
   return { items: data.data.items, maps: data.data.maps };
 }

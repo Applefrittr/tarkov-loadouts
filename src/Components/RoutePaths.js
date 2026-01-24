@@ -38,9 +38,15 @@ const RoutePaths = (props) => {
 
   useEffect(() => {
     const getData = async () => {
-      const { maps, items } = await getTarkovData();
-      setAllItems(items);
-      setAllMaps(maps);
+      try {
+        const { items, maps } = await getTarkovData();
+
+        setAllItems(items);
+        setAllMaps(maps);
+      } catch (error) {
+        console.log("Error fetching data: ", error.message);
+        // display error card in UI
+      }
     };
 
     getData();
